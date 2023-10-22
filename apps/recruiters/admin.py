@@ -1,3 +1,9 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Recruiter
+
+
+@admin.register(Recruiter)
+class RecruiterAdmin(admin.ModelAdmin):
+    list_display = ("id", "email", "name", "surname")
+    empty_value_display = "-пусто-"
