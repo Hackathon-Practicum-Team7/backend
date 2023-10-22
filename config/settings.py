@@ -1,3 +1,4 @@
+from datetime import timedelta
 import os
 from pathlib import Path
 
@@ -106,8 +107,25 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
 }
 
 SIMPLE_JWT = {
     'AUTH_HEADER_TYPES': ('JWT', 'Bearer'),
+    "ACCESS_TOKEN_LIFETIME": timedelta(days=7),
+}
+
+DJOSER = {
+    'LOGIN_FIELD': 'email',
+}
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Hakaton Career Tracker API',
+    'DESCRIPTION': (
+        'Цель сервиса: предоставить возможность партнерам работать '
+        'с базой заинтересованных кандидатов и отбирать не только '
+        'текущих студентов, но и выпускников уровня middle и выше'
+    ),
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
 }
