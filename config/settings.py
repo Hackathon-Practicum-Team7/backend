@@ -20,8 +20,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'djoser',
+    'drf_spectacular',
     'rest_framework',
     'django_filters',
+    "apps.api.apps.ApiConfig",
+    "apps.students.apps.StudentsConfig",
+    "apps.recruiters.apps.RecruitersConfig",
 ]
 
 MIDDLEWARE = [
