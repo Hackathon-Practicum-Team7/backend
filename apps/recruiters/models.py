@@ -34,7 +34,7 @@ class CustomUserManager(BaseUserManager):
 
 class Recruiter(AbstractBaseUser, PermissionsMixin):
     id = models.UUIDField(
-        "Уникальный id", primary_key=True, default=uuid.uuid4, editable=False
+        primary_key=True, default=uuid.uuid4, editable=False
     )
     email = models.EmailField(unique=True)
     name = models.CharField(
