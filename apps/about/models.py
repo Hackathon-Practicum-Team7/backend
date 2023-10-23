@@ -1,94 +1,76 @@
 from django.db import models
 
 
-class CustomMeta:
-    ordering = ('-id',)
+class BaseModel(models.Model):
+    """Абстрактная базовая модель с общим полем title."""
 
-
-class DirectionOfStudy(models.Model):
-    """Модель Направление обучения."""
     title = models.CharField(max_length=155)
 
-    class Meta(CustomMeta):
-        verbose_name = 'Направление обучения'
-        verbose_name_plural = 'Направления обучения'
+    class Meta:
+        abstract = True
+        ordering = ("-id",)
 
     def __str__(self):
         return self.title
 
 
-class Profession(models.Model):
+class DirectionOfStudy(BaseModel):
+    """Модель Направление обучения."""
+
+    class Meta:
+        verbose_name = "Направление обучения"
+        verbose_name_plural = "Направления обучения"
+
+
+class Profession(BaseModel):
     """Модель Профессия."""
-    title = models.CharField(max_length=155)
+
     direction = models.ForeignKey(
         DirectionOfStudy,
         on_delete=models.SET_NULL,
-        related_name='professions',
+        related_name="professions",
     )
 
-    class Meta(CustomMeta):
-        verbose_name = 'Профессия'
-        verbose_name_plural = 'Профессии'
-
-    def __str__(self):
-        return self.title
+    class Meta:
+        verbose_name = "Профессия"
+        verbose_name_plural = "Профессии"
 
 
-class Grade(models.Model):
+class Grade(BaseModel):
     """Модель Уровень навыков."""
-    title = models.CharField(max_length=155)
 
-    class Meta(CustomMeta):
-        verbose_name = 'Уровень'
-        verbose_name_plural = 'Уровни'
-
-    def __str__(self):
-        return self.title
+    class Meta:
+        verbose_name = "Уровень"
+        verbose_name_plural = "Уровни"
 
 
-class Skill(models.Model):
+class Skill(BaseModel):
     """Модель Навыки."""
-    title = models.CharField(max_length=155)
 
-    class Meta(CustomMeta):
-        verbose_name = 'Навык'
-        verbose_name_plural = 'Навыки'
-
-    def __str__(self):
-        return self.title
+    class Meta:
+        verbose_name = "Навык"
+        verbose_name_plural = "Навыки"
 
 
-class City(models.Model):
+class City(BaseModel):
     """Модель Город проживания."""
-    title = models.CharField(max_length=155)
 
-    class Meta(CustomMeta):
-        verbose_name = 'Город'
-        verbose_name_plural = 'Города'
-
-    def __str__(self):
-        return self.title
+    class Meta:
+        verbose_name = "Город"
+        verbose_name_plural = "Города"
 
 
-class EmploymentType(models.Model):
+class EmploymentType(BaseModel):
     """Модель Вид занятости."""
-    title = models.CharField(max_length=155)
 
-    class Meta(CustomMeta):
-        verbose_name = 'Вид занятости'
-        verbose_name_plural = 'Вид занятости'
-
-    def __str__(self):
-        return self.title
+    class Meta:
+        verbose_name = "Вид занятости"
+        verbose_name_plural = "Вид занятости"
 
 
-class WorkingCondition(models.Model):
+class WorkingCondition(BaseModel):
     """Модель Условия работы."""
-    title = models.CharField(max_length=155)
 
-    class Meta(CustomMeta):
-        verbose_name = 'Условия работы'
-        verbose_name_plural = 'Условия работы'
-
-    def __str__(self):
-        return self.title
+    class Meta:
+        verbose_name = "Условия работы"
+        verbose_name_plural = "Условия работы"
