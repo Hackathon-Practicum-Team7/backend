@@ -2,7 +2,7 @@ from apps.about.models import City, DirectionOfStudy
 
 
 def get_cities():
-    return City.objects.all().sorted_by("title")
+    return City.objects.all().order_by("title")
 
 
 def get_direction_of_study():
