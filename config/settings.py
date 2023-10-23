@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     "apps.api.apps.ApiConfig",
     "apps.students.apps.StudentsConfig",
     "apps.recruiters.apps.RecruitersConfig",
+    "apps.about.apps.AboutConfig",
 ]
 
 MIDDLEWARE = [
