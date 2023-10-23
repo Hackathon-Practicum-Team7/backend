@@ -21,7 +21,7 @@ class Profession(models.Model):
     """Модель Профессия."""
     title = models.CharField(max_length=155)
     direction = models.ForeignKey(
-        'DirectionOfStudy',
+        DirectionOfStudy,
         on_delete=models.SET_NULL,
         related_name='professions',
     )
