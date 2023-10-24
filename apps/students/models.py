@@ -20,7 +20,6 @@ class CustomMeta:
 class Contact(models.Model):
     """Модель Контакты."""
 
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     student = models.OneToOneField(
         "Student", on_delete=models.CASCADE, related_name="contact"
     )
@@ -50,8 +49,8 @@ class Job(models.Model):
     )
     organisation = models.CharField(max_length=250)
     position = models.CharField(max_length=150)
-    started_at = models.DateTimeField()
-    finished_at = models.DateTimeField()
+    started_at = models.DateField()
+    finished_at = models.DateField()
     about = models.TextField(max_length=500)
 
     class Meta(CustomMeta):
@@ -70,8 +69,8 @@ class Education(models.Model):
     )
     institute = models.CharField(max_length=250)
     speciality = models.CharField(max_length=250)
-    started_at = models.DateTimeField()
-    finished_at = models.DateTimeField()
+    started_at = models.DateField()
+    finished_at = models.DateField()
 
     class Meta(CustomMeta):
         verbose_name = "Образование"
@@ -79,6 +78,30 @@ class Education(models.Model):
 
     def __str__(self):
         return f"{self.speciality} at {self.institute}"
+
+
+class StudentSkill(models.Model):
+    """Промежуточная модель скилы Студента"""
+
+    class Score(models.TextChoices):
+        """Оценка навыка"""
+
+        BEGINNER = "beginner", "новичок"
+        BASIC = "basic", "базовый уровень"
+        MIDDLE = "middle", "уверенный пользователь"
+        PROFESSIONAL = "professional", "профессионал"
+
+    sudent = models.ForeignKey(
+        "Student", on_delete=models.CASCADE, related_name="student_skill"
+    )
+    skill = models.ForeignKey(
+        Skill, on_delete=models.CASCADE, related_name="student_skill"
+    )
+    score = models.CharField(
+        max_length=12,
+        choices=Score.choices,
+        default=Score.BEGINNER,
+    )
 
 
 def student_resume_path(instance, filename):
@@ -92,6 +115,7 @@ def student_avatar_path(instance, filename):
 class Student(models.Model):
     """Модель Студент."""
 
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     name = models.CharField(max_length=50)
     surname = models.CharField(max_length=50)
     profession = models.ForeignKey(
@@ -103,7 +127,7 @@ class Student(models.Model):
     grade = models.ForeignKey(
         Grade, on_delete=models.SET_NULL, related_name="students", null=True
     )
-    skills = models.ManyToManyField(Skill)
+    skills = models.ManyToManyField(Skill, through="StudentSkill")
     city = models.ForeignKey(
         City, on_delete=models.SET_NULL, related_name="students", null=True
     )
@@ -125,15 +149,12 @@ class Student(models.Model):
         verbose_name_plural = "Студенты"
 
     @property
-    def get_experience(self):
+    def experience(self):
         if self.started_working:
             today = timezone.now()
-            delta = today - self.started_working
-            years = delta.days // 365
-            months = (delta.days % 365) // 30
-            return f"{years}, {months}"
+            return today.year - self.started_working.year
         else:
-            return "Нет опыта"
+            return None
 
     def __str__(self):
         return f"{self.name} {self.surname}"
