@@ -23,16 +23,16 @@ class CustomUserManager(BaseUserManager):
         if extra_fields.get("is_staff") is not True:
             raise ValueError("Суперпользователь должен иметь is_staff=True.")
         if extra_fields.get("is_superuser") is not True:
-            raise ValueError(
-                "Суперпользователь должен иметь is_superuser=True."
-            )
+            raise ValueError("Суперпользователь должен иметь is_superuser=True.")
         return self.create_user(email, password, **extra_fields)
 
 
 class Recruiter(AbstractBaseUser, PermissionsMixin):
-    id = models.UUIDField(
-        primary_key=True, default=uuid.uuid4, editable=False
-    )
+    """
+    Модель для Рекрутера
+    """
+
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     email = models.EmailField(unique=True)
     name = models.CharField(
         max_length=50,

@@ -129,4 +129,12 @@ SPECTACULAR_SETTINGS = {
     ),
     'VERSION': '1.0.0',
     'SERVE_INCLUDE_SCHEMA': False,
+    'SCHEMA_PATH_PREFIX': r'/api/v[0-9]',
+    'AUTHENTICATION_WHITELIST': ['rest_framework_simplejwt.authentication.JWTAuthentication'],
+    'TAGS': [
+        {
+            "name": "auxilary",
+            "description": "Вспомогательные эндпоинты"
+        }
+    ]
 }
