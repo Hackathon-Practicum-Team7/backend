@@ -25,9 +25,7 @@ class Contact(models.Model):
     )
     email = models.EmailField(unique=True)
     phone = models.CharField(max_length=25, unique=True)
-    telegram = models.CharField(
-        max_length=150, unique=True, null=True, blank=True
-    )
+    telegram = models.URLField(null=True, blank=True)
     portfolio = models.URLField(null=True, blank=True)
     whatsapp = models.CharField(
         max_length=25, unique=True, null=True, blank=True
@@ -69,7 +67,7 @@ class Education(models.Model):
     )
     institute = models.CharField(max_length=250)
     speciality = models.CharField(max_length=250)
-    started_at = models.DateField()
+    started_at = models.DateField(null=True, blank=True)
     finished_at = models.DateField()
 
     class Meta(CustomMeta):
@@ -105,11 +103,11 @@ class StudentSkill(models.Model):
 
 
 def student_resume_path(instance, filename):
-    return f"student_{instance.student.id}/resumes/{filename}"
+    return f"student_{instance.id}/resumes/{filename}"
 
 
 def student_avatar_path(instance, filename):
-    return f"student_{instance.student.id}/avatars/{filename}"
+    return f"student_{instance.id}/avatars/{filename}"
 
 
 class Student(models.Model):
