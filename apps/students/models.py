@@ -121,15 +121,15 @@ class Student(models.Model):
     profession = models.ForeignKey(
         Profession,
         on_delete=models.SET_NULL,
-        null=True,
         related_name="students",
+        null=True
     )
     grade = models.ForeignKey(
-        Grade, on_delete=models.SET_NULL, null=True, related_name="students"
+        Grade, on_delete=models.SET_NULL, related_name="students", null=True
     )
     skills = models.ManyToManyField(Skill, through="StudentSkill")
     city = models.ForeignKey(
-        City, on_delete=models.SET_NULL, null=True, related_name="students"
+        City, on_delete=models.SET_NULL, related_name="students", null=True
     )
     started_working = models.DateField(null=True, blank=True)
     employment_types = models.ManyToManyField(EmploymentType)
