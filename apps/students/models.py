@@ -67,7 +67,7 @@ class Education(models.Model):
     )
     institute = models.CharField(max_length=250)
     speciality = models.CharField(max_length=250)
-    started_at = models.DateField()  # TODO: сделать необязательным (для курсов в дизайне только дата окончания)  # noqa E501
+    started_at = models.DateField(null=True, blank=True)
     finished_at = models.DateField()
 
     class Meta(CustomMeta):
