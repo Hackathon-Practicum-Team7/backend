@@ -1,6 +1,31 @@
 from django.contrib import admin
 
-from apps.about.models import City, Profession, DirectionOfStudy
+from apps.about.models import (
+    City,
+    Grade,
+    Profession,
+    DirectionOfStudy,
+    EmploymentType,
+    WorkingCondition,
+)
+
+
+@admin.register(EmploymentType)
+class EmploymentTypeAdmin(admin.ModelAdmin):
+    list_display = ("id", "title")
+    empty_value_display = "-пусто-"
+
+
+@admin.register(WorkingCondition)
+class WorkingConditionAdmin(admin.ModelAdmin):
+    list_display = ("id", "title")
+    empty_value_display = "-пусто-"
+
+
+@admin.register(Grade)
+class GradeAdmin(admin.ModelAdmin):
+    list_display = ("id", "title")
+    empty_value_display = "-пусто-"
 
 
 @admin.register(City)
