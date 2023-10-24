@@ -1,3 +1,5 @@
+from django.db.models import F
+
 from apps.about.models import City, DirectionOfStudy
 
 
@@ -7,3 +9,10 @@ def get_cities():
 
 def get_direction_of_study():
     return DirectionOfStudy.objects.all().prefetch_related("professions")
+
+
+def get_skills(student):
+    skills = student.skills.annotate(
+        score=F("student_skill__score")
+    )
+    return skills
