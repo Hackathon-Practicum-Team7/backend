@@ -3,6 +3,15 @@ import uuid
 from django.db import models
 from django.utils import timezone
 
+from apps.about.models import (
+    City,
+    EmploymentType,
+    Grade,
+    Profession,
+    Skill,
+    WorkingCondition,
+)
+
 
 class CustomMeta:
     ordering = ("-id",)
@@ -86,18 +95,21 @@ class Student(models.Model):
     name = models.CharField(max_length=50)
     surname = models.CharField(max_length=50)
     profession = models.ForeignKey(
-        "Profession", on_delete=models.SET_NULL, related_name="students"
+        Profession,
+        on_delete=models.SET_NULL,
+        related_name="students",
+        null=True
     )
     grade = models.ForeignKey(
-        "Grade", on_delete=models.SET_NULL, related_name="students"
+        Grade, on_delete=models.SET_NULL, related_name="students", null=True
     )
-    skills = models.ManyToManyField("Skill")
+    skills = models.ManyToManyField(Skill)
     city = models.ForeignKey(
-        "City", on_delete=models.SET_NULL, related_name="students"
+        City, on_delete=models.SET_NULL, related_name="students", null=True
     )
     started_working = models.DateField(null=True, blank=True)
-    employment_types = models.ManyToManyField("EmploymentType")
-    working_condition = models.ManyToManyField("WorkingCondition")
+    employment_types = models.ManyToManyField(EmploymentType)
+    working_condition = models.ManyToManyField(WorkingCondition)
     about = models.TextField(max_length=500)
     avatar = models.ImageField(
         upload_to=student_avatar_path, null=True, blank=True

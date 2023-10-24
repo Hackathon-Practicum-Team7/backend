@@ -29,6 +29,7 @@ class Profession(BaseModel):
         DirectionOfStudy,
         on_delete=models.SET_NULL,
         related_name="professions",
+        null=True,
     )
 
     class Meta:
