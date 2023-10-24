@@ -8,8 +8,8 @@ urlpatterns = [
     # Авторизация
     path('auth/', include('djoser.urls.jwt')),
     # Карточка студента
-    path('students/<uuid:id>/', StudentCardView.as_view(), name='cities'),
+    path('students/<uuid:id>/', StudentCardView.as_view(), name='student'),
     # Вспомогательные поинты
-    path('cities/', CityView.as_view(), name='student'),
+    path('cities/', CityView.as_view(), name='cities'),
     path('professions/', ProfessionView.as_view(), name='professions'),
 ]
