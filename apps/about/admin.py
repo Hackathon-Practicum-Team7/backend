@@ -6,8 +6,15 @@ from apps.about.models import (
     Profession,
     DirectionOfStudy,
     EmploymentType,
+    Skill,
     WorkingCondition,
 )
+
+
+@admin.register(Skill)
+class SkillAdmin(admin.ModelAdmin):
+    list_display = ("id", "title")
+    empty_value_display = "-пусто-"
 
 
 @admin.register(EmploymentType)

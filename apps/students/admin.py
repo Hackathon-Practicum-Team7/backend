@@ -61,6 +61,7 @@ class StudentAdmin(admin.ModelAdmin):
     ]
     inlines = (ContactInline, EducationInline, JobInline, StudentSkillInline)
     list_display = (
+        "id",
         "name",
         "surname",
         "profession",
