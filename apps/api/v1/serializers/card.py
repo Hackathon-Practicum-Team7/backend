@@ -29,6 +29,7 @@ class JobSerializer(DateSerializer):
 
 
 class SkillSerializer(serializers.Serializer):
+    """Сериализатор для отображения скиллов студента"""
     id = serializers.IntegerField(read_only=True)
     title = serializers.CharField()
     score = serializers.CharField()
