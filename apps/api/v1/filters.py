@@ -16,13 +16,18 @@ class StudentFilter(FilterSet):
 
     direction = filters.CharFilter(
         field_name="profession__direction__title",
-        lookup_expr="exact",
+        method="filter_direction",
     )
+
+    def filter_direction(self, queryset, name, value):
+        values = value.split(',')
+        return queryset.filter(profession__direction__title__in=values)
 
     skills = filters.ModelMultipleChoiceFilter(
         field_name="skills__title",
         to_field_name="title",
         queryset=Skill.objects.all(),
+        # conjoined=True - условие для AND фильтрации
     )
 
     city = filters.CharFilter(
