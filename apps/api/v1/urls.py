@@ -3,10 +3,17 @@ from django.urls import include, path
 from apps.api.v1.views.about import CityView, ProfessionView
 from apps.api.v1.views.card import StudentCardView
 from apps.api.v1.views.students_list import StudentListView
+from apps.api.v1.views.resume import DownloadResumeView
 
 urlpatterns = [
     # Авторизация
     path('auth/', include('djoser.urls.jwt')),
+    # Скачать резюме
+    path(
+        'students/<uuid:id>/download_resume/',
+        DownloadResumeView.as_view(),
+        name='download_resume'
+    ),
     # Карточка студента
     path('students/<uuid:id>/', StudentCardView.as_view(), name='student'),
     # Список студентов
