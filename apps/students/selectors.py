@@ -21,6 +21,6 @@ def get_all_students() -> QuerySet[Student]:
 
 def get_student(id: uuid) -> Student:
     try:
-        return get_all_students.get(id=id)
+        return get_all_students().get(id=id)
     except ObjectDoesNotExist:
         raise exceptions.NotFound({"details": "Объект не найден"})
