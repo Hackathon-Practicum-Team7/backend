@@ -9,7 +9,7 @@ from apps.students.models import Student
 
 
 class DownloadResumeView(APIView):
-    ermission_classes = (IsAuthenticated,)
+    permission_classes = (IsAuthenticated,)
 
     def get(self, request, id, format=None):
         resume = get_object_or_404(Student, id=id).resume
