@@ -43,6 +43,7 @@ class ProfessionView(generics.ListAPIView):
         return queryset
 
 
+@extend_schema_view(post=extend_schema(tags=["auxilary"]))
 class ExportExcelView(views.APIView):
     """View для скачивание файла excel"""
 
