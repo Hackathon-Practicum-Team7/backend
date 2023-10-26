@@ -1,14 +1,14 @@
 import uuid
 
 from django.core.exceptions import ObjectDoesNotExist
-from django.db.models import QuerySet
+from django.db.models import Count, Q, QuerySet
 from rest_framework import exceptions
 
 from apps.students.models import Student
 
 
-def get_all_students() -> QuerySet[Student]:
-    return Student.objects.select_related(
+def get_all_students(skills=None) -> QuerySet[Student]:
+    queryset = Student.objects.select_related(
         "profession",
         "grade",
         "city",
@@ -17,6 +17,13 @@ def get_all_students() -> QuerySet[Student]:
         "employment_types",
         "working_condition",
     )
+    if skills:
+        queryset = queryset.annotate(
+            skill_match=Count("skills", filter=Q(
+                skills__title__in=skills)
+            )
+        ).order_by("-skill_match")
+    return queryset
 
 
 def get_student(id: uuid) -> Student:

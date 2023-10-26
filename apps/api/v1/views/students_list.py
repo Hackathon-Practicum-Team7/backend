@@ -15,4 +15,6 @@ class StudentListView(generics.ListAPIView):
     filterset_class = StudentFilter
 
     def get_queryset(self):
-        return get_all_students()
+        skills = self.request.query_params.getlist("skills")
+        queryset = get_all_students(skills)
+        return queryset

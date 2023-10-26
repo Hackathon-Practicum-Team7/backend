@@ -108,6 +108,7 @@ class StudentCardSerializer(serializers.ModelSerializer):
         serializer = SkillSerializer(skills, many=True)
         return serializer.data
 
+    @extend_schema_field(field=bool)
     def get_is_favorited(self, obj):
         recruiter = self.context.get("request").user
         return obj in recruiter.favorite_students.all()
