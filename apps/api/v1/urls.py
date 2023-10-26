@@ -17,9 +17,9 @@ urlpatterns = [
     ),
     # Добавить в избранное
     path(
-        'students/<uuid:id>/favorite/',
-        FavoritesView.as_view({'post': 'favorite', 'delete': 'favorite'}),
-        name='student-favorite'),
+        'students/favorite/',
+        FavoritesView.as_view(),
+        name='favorite-students'),
     # Карточка студента
     path('students/<uuid:id>/', StudentCardView.as_view(), name='student'),
     # Список студентов

@@ -45,6 +45,8 @@ class Recruiter(AbstractBaseUser, PermissionsMixin):
     is_staff = models.BooleanField(default=False)
     is_superuser = models.BooleanField(default=False)
     is_active = models.BooleanField("Активный", default=True)
+    favorite_students = models.ManyToManyField(
+        Student, through="FavoriteStudents")
 
     USERNAME_FIELD = "email"
 
@@ -58,16 +60,16 @@ class Recruiter(AbstractBaseUser, PermissionsMixin):
         return self.email
 
 
-class Favorite(models.Model):
+class FavoriteStudents(models.Model):
     recruiter = models.ForeignKey(
         Recruiter,
         on_delete=models.CASCADE,
-        related_name="recruters",
+        related_name="favorite",
     )
     student = models.ForeignKey(
         Student,
         on_delete=models.CASCADE,
-        related_name="students",
+        related_name="favorite",
     )
 
     class Meta:

@@ -66,6 +66,7 @@ class StudentCardSerializer(serializers.ModelSerializer):
     educations = serializers.SerializerMethodField()
     jobs = serializers.SerializerMethodField()
     skills = serializers.SerializerMethodField()
+    is_favorited = serializers.SerializerMethodField()
 
     class Meta:
         model = Student
@@ -86,6 +87,7 @@ class StudentCardSerializer(serializers.ModelSerializer):
             "about",
             "skills",
             "resume",
+            "is_favorited"
         )
 
     @extend_schema_field(field=EducationSerializer)
@@ -105,3 +107,7 @@ class StudentCardSerializer(serializers.ModelSerializer):
         skills = get_skills(obj)
         serializer = SkillSerializer(skills, many=True)
         return serializer.data
+
+    def get_is_favorited(self, obj):
+        recruiter = self.context.get("request").user
+        return obj in recruiter.favorite_students.all()

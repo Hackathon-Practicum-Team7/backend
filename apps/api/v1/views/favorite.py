@@ -1,37 +1,30 @@
-from django.db import IntegrityError
-from django.shortcuts import get_object_or_404
-from rest_framework import status, viewsets
-from rest_framework.decorators import action
+from rest_framework import status, views
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
-from apps.recruiters.models import Favorite
-from apps.students.models import Student
-from apps.api.v1.serializers.card import StudentCardSerializer
+# from apps.api.v1.serializers.favorite import FavoriteStudentsSerializer
+from apps.students.selectors import get_selected_students
 
 
-class FavoritesView(viewsets.ModelViewSet):
+class FavoritesView(views.APIView):
+    """View для добавления студента в избранное."""
+    # serializer_class = FavoriteStudentsSerializer
     permission_classes = (IsAuthenticated,)
 
-    @action(detail=True, methods=["post", "delete"])
-    def favorite(self, request, id):
-        student = get_object_or_404(Student, id=id)
-        if request.method == "POST":
-            try:
-                Favorite.objects.create(
-                    recruiter=request.user, student=student)
-            except IntegrityError:
-                return Response(data={"detail": "Студент уже в избранном."},
-                                status=status.HTTP_400_BAD_REQUEST)
-            serializer = StudentCardSerializer(
-                student, context={"request": request})
-            return Response(
-                data=serializer.data, status=status.HTTP_201_CREATED)
-        deleted, _ = Favorite.objects.filter(
-            recruiter=request.user, student=student).delete()
-        if deleted:
-            return Response({"message": "Студент удален из избранного"},
-                            status=status.HTTP_204_NO_CONTENT)
-        else:
-            return Response({"message": "Студент не найден в избранном"},
-                            status=status.HTTP_404_NOT_FOUND)
+    def post(self, request):
+        students_id = request.data.get("students_id")
+        queryset = get_selected_students(students_id)
+        print(queryset)
+        request.user.favorite_students.add(*queryset)
+        return Response(
+            {"message": "Студенты успешно добавлены в избранное"},
+            status=status.HTTP_201_CREATED)
+
+    def delete(self, request):
+        students_id = request.data.get("students_id")
+        queryset = get_selected_students(students_id)
+        request.user.favorite_students.remove(*queryset)
+        return Response(
+            {"message": "Студенты успешно удалены из избранного"},
+            status=status.HTTP_204_NO_CONTENT
+        )
