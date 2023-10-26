@@ -32,7 +32,7 @@ class SkillSerializer(serializers.Serializer):
     """Сериализатор для отображения скиллов студента"""
     id = serializers.IntegerField(read_only=True)
     title = serializers.CharField()
-    score = serializers.CharField()
+    score = serializers.IntegerField()
 
 
 class ContactSerializer(serializers.ModelSerializer):
@@ -67,6 +67,8 @@ class StudentCardSerializer(serializers.ModelSerializer):
     jobs = serializers.SerializerMethodField()
     skills = serializers.SerializerMethodField()
     is_favorited = serializers.SerializerMethodField()
+    experience = serializers.IntegerField(read_only=True)
+
 
     class Meta:
         model = Student
