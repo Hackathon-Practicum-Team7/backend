@@ -4,6 +4,8 @@ from django.contrib.auth.models import (AbstractBaseUser, BaseUserManager,
                                         PermissionsMixin)
 from django.db import models
 
+from apps.students.models import Student
+
 
 class CustomUserManager(BaseUserManager):
     def create_user(self, email, password=None, **extra_fields):
@@ -43,6 +45,7 @@ class Recruiter(AbstractBaseUser, PermissionsMixin):
     is_staff = models.BooleanField(default=False)
     is_superuser = models.BooleanField(default=False)
     is_active = models.BooleanField("Активный", default=True)
+    favorite_students = models.ManyToManyField(Student)
 
     USERNAME_FIELD = "email"
 

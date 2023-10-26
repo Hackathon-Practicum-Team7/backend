@@ -6,6 +6,7 @@ from apps.api.v1.views.auxiliary import (
     ExportExcelView,
 )
 from apps.api.v1.views.card import StudentCardView
+from apps.api.v1.views.favorite import FavoritesView
 from apps.api.v1.views.students_list import StudentListView
 from apps.api.v1.views.resume import DownloadResumeView
 
@@ -18,6 +19,11 @@ urlpatterns = [
         DownloadResumeView.as_view(),
         name='download_resume'
     ),
+    path(
+        'students/favorite/',
+        FavoritesView.as_view(),
+        name='favorite-students'),
+    # Карточка студента
     path('students/<uuid:id>/', StudentCardView.as_view(), name='student'),
     path('students/', StudentListView.as_view(), name='student-list'),
     # Вспомогательные поинты
