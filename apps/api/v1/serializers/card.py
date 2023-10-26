@@ -66,6 +66,7 @@ class StudentCardSerializer(serializers.ModelSerializer):
     educations = serializers.SerializerMethodField()
     jobs = serializers.SerializerMethodField()
     skills = serializers.SerializerMethodField()
+    experience = serializers.IntegerField(read_only=True)
 
     class Meta:
         model = Student
