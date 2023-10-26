@@ -19,6 +19,10 @@ urlpatterns = [
         DownloadResumeView.as_view(),
         name='download_resume'
     ),
+    path(
+        'students/favorite/',
+        FavoritesView.as_view(),
+        name='favorite-students'),
     path('students/<uuid:id>/', StudentCardView.as_view(), name='student'),
     path('students/', StudentListView.as_view(), name='student-list'),
     # Вспомогательные поинты
