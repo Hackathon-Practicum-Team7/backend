@@ -23,6 +23,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'djoser',
     'drf_spectacular',
+    'drf_spectacular_sidecar',
     'rest_framework',
     'django_filters',
     "apps.api.apps.ApiConfig",
@@ -65,7 +66,7 @@ DATABASES = {
     "default": {
         "ENGINE": os.getenv("DB_ENGINE", default="django.db.backends.sqlite3"),
         "NAME": os.getenv(
-            "DB_NAME", default=os.path.join(BASE_DIR, "db.sqlite3")
+            "POSTGRES_DB", default=os.path.join(BASE_DIR, "db.sqlite3")
         ),
         "USER": os.getenv("POSTGRES_USER"),
         "PASSWORD": os.getenv("POSTGRES_PASSWORD"),
@@ -101,6 +102,7 @@ USE_I18N = True
 USE_TZ = True
 
 STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
