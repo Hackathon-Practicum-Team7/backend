@@ -3,8 +3,8 @@ from django.urls import include, path
 from apps.api.v1.views.about import CityView, ProfessionView
 from apps.api.v1.views.card import StudentCardView
 from apps.api.v1.views.favorite import FavoritesView
-from apps.api.v1.views.students_list import StudentListView
 from apps.api.v1.views.resume import DownloadResumeView
+from apps.api.v1.views.students_list import StudentListView
 
 urlpatterns = [
     # Авторизация

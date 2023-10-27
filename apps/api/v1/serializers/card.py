@@ -1,5 +1,5 @@
-from rest_framework import serializers
 from drf_spectacular.utils import extend_schema_field
+from rest_framework import serializers
 
 from apps.about.selectors import get_skills
 from apps.students.models import Contact, Student

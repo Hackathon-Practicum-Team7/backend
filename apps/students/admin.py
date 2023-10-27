@@ -1,12 +1,6 @@
 from django.contrib import admin
 
-from apps.students.models import (
-    Contact,
-    Student,
-    Job,
-    Education,
-    StudentSkill
-)
+from apps.students.models import Contact, Education, Job, Student, StudentSkill
 
 
 class StudentSkillInline(admin.TabularInline):

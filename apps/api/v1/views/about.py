@@ -1,12 +1,10 @@
+from drf_spectacular.utils import extend_schema, extend_schema_view
 from rest_framework import generics
 from rest_framework.permissions import AllowAny
-from drf_spectacular.utils import extend_schema_view, extend_schema
 
 from apps.about.selectors import get_cities, get_direction_of_study
-from apps.api.v1.serializers.about import (
-    InfoOutputSerializer,
-    DirectionOfSudySerialiser,
-)
+from apps.api.v1.serializers.about import (DirectionOfSudySerialiser,
+                                           InfoOutputSerializer)
 
 
 @extend_schema_view(get=extend_schema(auth=[], tags=["auxilary"]))

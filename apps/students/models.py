@@ -3,14 +3,8 @@ import uuid
 from django.db import models
 from django.utils import timezone
 
-from apps.about.models import (
-    City,
-    EmploymentType,
-    Grade,
-    Profession,
-    Skill,
-    WorkingCondition,
-)
+from apps.about.models import (City, EmploymentType, Grade, Profession, Skill,
+                               WorkingCondition)
 
 
 class CustomMeta:
