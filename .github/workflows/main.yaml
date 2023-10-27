@@ -65,6 +65,6 @@ jobs:
             sudo docker rm nginx
             sudo docker rmi ${{ secrets.DOCKER_USERNAME }}/hakaton
             sudo docker pull ${{ secrets.DOCKER_USERNAME }}/hakaton:latest
-            sudo docker compose up -d --build
+            sudo docker compose -f docker-compose.yml up -d
             sudo docker exec -i backend python manage.py migrate
             sudo docker exec -i backend python manage.py collectstatic --noinput
