@@ -60,11 +60,11 @@ jobs:
           # passphrase: ${{ secrets.PASSPHRASE }}
           script: |
             cd hakaton/
-            sudo docker-compose stop
+            sudo docker compose stop
             sudo docker rm backend         
             sudo docker rm nginx
             sudo docker rmi ${{ secrets.DOCKER_USERNAME }}/hakaton
             sudo docker pull ${{ secrets.DOCKER_USERNAME }}/hakaton:latest
-            sudo docker-compose up -d --build
+            sudo docker compose up -d --build
             sudo docker exec -i backend python manage.py migrate
             sudo docker exec -i backend python manage.py collectstatic --noinput
