@@ -75,13 +75,13 @@ class Education(models.Model):
 class StudentSkill(models.Model):
     """Промежуточная модель скилы Студента"""
 
-    class Score(models.TextChoices):
+    class Score(models.IntegerChoices):
         """Оценка навыка"""
 
-        BEGINNER = "beginner", "новичок"
-        BASIC = "basic", "базовый уровень"
-        MIDDLE = "middle", "уверенный пользователь"
-        PROFESSIONAL = "professional", "профессионал"
+        BEGINNER = 1
+        BASIC = 2
+        MIDDLE = 3
+        PROFESSIONAL = 4
 
     sudent = models.ForeignKey(
         "Student", on_delete=models.CASCADE, related_name="student_skill"
@@ -89,8 +89,7 @@ class StudentSkill(models.Model):
     skill = models.ForeignKey(
         Skill, on_delete=models.CASCADE, related_name="student_skill"
     )
-    score = models.CharField(
-        max_length=12,
+    score = models.IntegerField(
         choices=Score.choices,
         default=Score.BEGINNER,
     )
