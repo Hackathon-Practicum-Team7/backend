@@ -1,4 +1,5 @@
 Django==4.1
+django-cors-headers==4.3.0
 django-filter==23.3
 django-templated-mail==1.1.1
 djangorestframework==3.14.0

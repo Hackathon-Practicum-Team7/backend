@@ -1,14 +1,7 @@
 from django.contrib import admin
 
-from apps.about.models import (
-    City,
-    Grade,
-    Profession,
-    DirectionOfStudy,
-    EmploymentType,
-    Skill,
-    WorkingCondition,
-)
+from apps.about.models import (City, DirectionOfStudy, EmploymentType, Grade,
+                               Profession, Skill, WorkingCondition)
 
 
 @admin.register(Skill)

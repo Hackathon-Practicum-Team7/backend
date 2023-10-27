@@ -1,5 +1,5 @@
-from rest_framework import serializers
 from drf_spectacular.utils import extend_schema_field
+from rest_framework import serializers
 
 from apps.about.selectors import get_skills
 from apps.students.models import Contact, Student
@@ -69,7 +69,6 @@ class StudentCardSerializer(serializers.ModelSerializer):
     is_favorited = serializers.SerializerMethodField()
     experience = serializers.IntegerField(read_only=True)
 
-
     class Meta:
         model = Student
         fields = (
@@ -110,6 +109,7 @@ class StudentCardSerializer(serializers.ModelSerializer):
         serializer = SkillSerializer(skills, many=True)
         return serializer.data
 
+    @extend_schema_field(field=bool)
     def get_is_favorited(self, obj):
         recruiter = self.context.get("request").user
         return obj in recruiter.favorite_students.all()
