@@ -10,7 +10,7 @@ urlpatterns = [
     path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
     # Пути для свагера и редока
     path(
-        'api/schema/swagger-ui/',
+        'api/schema/swagger/',
         SpectacularSwaggerView.as_view(url_name='schema'),
         name='swagger-ui',
     ),
