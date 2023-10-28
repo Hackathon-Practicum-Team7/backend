@@ -14,15 +14,6 @@ class StudentFilter(FilterSet):
         queryset=Profession.objects.all(),
     )
 
-    direction = filters.CharFilter(
-        field_name="profession__direction__title",
-        method="filter_direction",
-    )
-
-    def filter_direction(self, queryset, name, value):
-        values = value.split(',')
-        return queryset.filter(profession__direction__title__in=values)
-
     skills = filters.ModelMultipleChoiceFilter(
         field_name="skills__title",
         to_field_name="title",
@@ -62,7 +53,6 @@ class StudentFilter(FilterSet):
         model = Student
         fields = (
             "profession",
-            "direction",
             "skills",
             "city",
             "employment_types",
