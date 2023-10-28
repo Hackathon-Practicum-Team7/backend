@@ -42,7 +42,7 @@ class Job(models.Model):
     organisation = models.CharField(max_length=250)
     position = models.CharField(max_length=150)
     started_at = models.DateField()
-    finished_at = models.DateField()
+    finished_at = models.DateField(null=True, blank=True)
     about = models.TextField(max_length=500)
 
     class Meta(CustomMeta):
