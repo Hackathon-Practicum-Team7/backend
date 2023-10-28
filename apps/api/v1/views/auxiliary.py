@@ -1,15 +1,13 @@
 import pandas as pd
-
 from django.http import HttpResponse
+from drf_spectacular.utils import extend_schema, extend_schema_view
 from rest_framework import generics, views
 from rest_framework.permissions import AllowAny, IsAuthenticated
-from drf_spectacular.utils import extend_schema_view, extend_schema
 
-from apps.about.selectors import get_cities, get_direction_of_study, get_all_skills
-from apps.api.v1.serializers.auxiliary import (
-    InfoOutputSerializer,
-    DirectionOfSudySerialiser,
-)
+from apps.about.selectors import (get_all_skills, get_cities,
+                                  get_direction_of_study)
+from apps.api.v1.serializers.auxiliary import (DirectionOfSudySerialiser,
+                                               InfoOutputSerializer)
 from apps.students.selectors import get_selected_students
 from apps.students.utils import get_dataframe
 
