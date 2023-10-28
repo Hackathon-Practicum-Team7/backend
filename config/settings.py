@@ -129,6 +129,12 @@ SIMPLE_JWT = {
 
 DJOSER = {
     'LOGIN_FIELD': 'email',
+    'PERMISSIONS': {
+        'user': ['djoser.permissions.CurrentUserOrAdminOrReadOnly'],
+    },
+    'SERIALIZERS': {
+        'current_user': 'apps.api.v1.serializers.recruiter.RecruiterSerializer',
+    },
 }
 
 SPECTACULAR_SETTINGS = {
