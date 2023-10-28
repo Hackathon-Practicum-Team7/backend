@@ -17,7 +17,7 @@ def get_all_students(skills=None) -> QuerySet[Student]:
         "skills",
         "employment_types",
         "working_condition",
-    )
+    ).filter(is_looking_for_job=True)
     if skills:
         queryset = queryset.annotate(
             skill_match=Count("skills", filter=Q(skills__title__in=skills))
@@ -32,7 +32,7 @@ def get_student(id: uuid) -> Student:
         raise exceptions.NotFound({"details": "Объект не найден"})
 
 
-def get_selected_students(students_id: list[dict]) -> list:
+def get_selected_students(students_id: list[dict]) -> QuerySet[Student]:
     ids = []
     for data in students_id:
         ids.append(uuid.UUID(data.get("id")))
