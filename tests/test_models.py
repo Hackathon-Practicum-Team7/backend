@@ -12,6 +12,7 @@ def test_grade_creation(grade):
 
 def test_profession_creation(profession):
     assert profession.title == "Test Profession"
+    assert profession.direction.title == "Designer"
 
 
 def test_skill_creation(skill):
@@ -40,3 +41,7 @@ def test_contact_creation(contact):
 
 def test_job_creation(job):
     assert job.organisation == "Test Company"
+
+
+def test_education(education):
+    assert education.institute == "Test Institute"

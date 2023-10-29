@@ -143,5 +143,14 @@ def student_skill(db, student, skill):
 
 
 @pytest.fixture
+def skills(db):
+    skills = []
+    for title in ["Skill 1", "Skill 2", "Skill 3"]:
+        skill = Skill.objects.create(title=title)
+        skills.append(skill)
+    return skills
+
+
+@pytest.fixture
 def current_year():
     return timezone.now().year

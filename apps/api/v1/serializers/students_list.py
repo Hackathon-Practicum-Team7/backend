@@ -43,7 +43,8 @@ class StudentListSerializer(StudentCardSerializer):
             "employment_types",
             "working_condition",
             "has_portfolio",
-            "skill_match"
+            "skill_match",
+            "is_favorited"
         )
 
     @extend_schema_field(field=int)

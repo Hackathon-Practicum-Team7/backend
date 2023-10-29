@@ -33,9 +33,8 @@ def test_get_all_students_with_skills():
 
 
 @pytest.mark.django_db
-def test_get_student():
-    student1, _, _ = create_test_students()
-    student = get_student(student1.id)
+def test_get_student(student):
+    student1 = get_student(student.id)
     assert student == student1
 
 
@@ -91,17 +90,17 @@ def test_calculate_skill_match():
 
 
 @pytest.mark.django_db
-def test_get_cities(city):
+def test_get_city(city):
     cities = get_cities()
     assert len(cities) == 1
-    assert cities[0].title == "Test City"
+    assert cities[0] == city
 
 
 @pytest.mark.django_db
-def test_get_direction_of_study(profession):
+def test_get_direction(profession):
     directions = get_direction_of_study()
     assert len(directions) == 1
-    assert directions[0].title == "Designer"
+    assert directions[0] == profession.direction
 
 
 @pytest.mark.django_db

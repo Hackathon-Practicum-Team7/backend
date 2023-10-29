@@ -39,6 +39,14 @@ def test_students_view(client_client):
     assert response.status_code == HTTPStatus.OK
 
 
+@pytest.mark.django_db()
+def test_students_view_anonymous():
+    client = APIClient()
+    url = reverse("student-list")
+    response = client.get(url)
+    assert response.status_code == HTTPStatus.UNAUTHORIZED
+
+
 @pytest.mark.django_db
 def test_student_card_view(client_client, student):
     url = reverse("student", kwargs={"id": student.id})
