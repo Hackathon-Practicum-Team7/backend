@@ -10,7 +10,7 @@ class ContactListSerializer(ContactSerializer):
     """Сериализатор для отображения контактов студента."""
     class Meta:
         model = Contact
-        fields = ("email", "telegram")
+        fields = ("email", "telegram", "phone")
 
 
 class SkillListSerializer(serializers.ModelSerializer):
