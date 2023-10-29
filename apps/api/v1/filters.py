@@ -1,6 +1,6 @@
 from django_filters.rest_framework import FilterSet, filters
 
-from apps.about.models import (EmploymentType, Grade, Profession, Skill,
+from apps.about.models import (City, EmploymentType, Grade, Profession, Skill,
                                WorkingCondition)
 from apps.students.models import Student
 
@@ -8,7 +8,7 @@ from apps.students.models import Student
 class StudentFilter(FilterSet):
     """Фильтры для студентов."""
 
-    profession = filters.ModelChoiceFilter(
+    profession = filters.ModelMultipleChoiceFilter(
         field_name="profession__title",
         to_field_name="title",
         queryset=Profession.objects.all(),
@@ -21,9 +21,10 @@ class StudentFilter(FilterSet):
         # conjoined=True - условие для AND фильтрации
     )
 
-    city = filters.CharFilter(
+    city = filters.ModelMultipleChoiceFilter(
         field_name="city__title",
-        lookup_expr="exact",
+        to_field_name="title",
+        queryset=City.objects.all(),
     )
 
     employment_types = filters.ModelMultipleChoiceFilter(
@@ -43,7 +44,7 @@ class StudentFilter(FilterSet):
         lookup_expr="exact",
     )
 
-    grade = filters.ModelChoiceFilter(
+    grade = filters.ModelMultipleChoiceFilter(
         field_name="grade__title",
         to_field_name="title",
         queryset=Grade.objects.all(),
