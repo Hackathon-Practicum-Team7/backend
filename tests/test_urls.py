@@ -2,11 +2,8 @@ import uuid
 from http import HTTPStatus
 
 import pytest
-
 from rest_framework.reverse import reverse
 from rest_framework.test import APIClient
-
-from tests.conftest import client_client, student
 
 uuid_str = str(uuid.uuid4())
 
@@ -49,16 +46,16 @@ def test_student_card_view(client_client, student):
     assert response.status_code == HTTPStatus.OK
 
 
-# @pytest.mark.django_db
-# def test_favorites_view(client_client):
-#     students_data = [
-#         {"id": str(uuid.uuid4())},
-#         {"id": str(uuid.uuid4())}
-#     ]
-#     data = {"students": students_data}
-#     url = reverse("favorite-students")
-#     response = client_client.post(url, data, format="json")
-#     assert response.status_code == HTTPStatus.CREATED
+@pytest.mark.django_db
+def test_favorites_view(client_client):
+    students_data = [
+        {"id": str(uuid.uuid4())},
+        {"id": str(uuid.uuid4())}
+    ]
+    data = {"students_id": students_data}
+    url = reverse("favorite-students")
+    response = client_client.post(url, data, format="json")
+    assert response.status_code == HTTPStatus.CREATED
 
 
 @pytest.mark.django_db
@@ -75,12 +72,11 @@ def test_export_excel_view(client_client):
     assert response.content
 
 
-# @pytest.mark.django_db
-# def test_download_resume_view(client_client):
-#     url = reverse("download_resume", kwargs={"id": uuid_str})
-#     response = client_client.get(url)
-#     assert response.status_code == HTTPStatus.OK
-#     assert response.content
-
-
-
+@pytest.mark.django_db
+def test_download_resume_view(client_client, student_with_resume):
+    url = reverse("download_resume", args=[str(student_with_resume.id)])
+    response = client_client.get(url)
+    assert response.status_code == HTTPStatus.OK
+    assert response[
+        'Content-Disposition'] == f'attachment; filename="{student_with_resume.resume.name}"'
+    assert response['Content-Type'] == 'application/pdf'
