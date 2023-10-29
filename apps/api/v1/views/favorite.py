@@ -1,14 +1,26 @@
 from rest_framework import status, views
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
+from drf_spectacular.utils import extend_schema_view, extend_schema
 
-# from apps.api.v1.serializers.favorite import FavoriteSerializer
 from apps.students.selectors import get_selected_students
+from apps.api.v1.serializers.students_list import StudentIDListSerializer
 
 
+@extend_schema_view(
+    post=extend_schema(
+        request=StudentIDListSerializer,
+        responses={201: None},
+        description="Добавление студентов в избранное"
+    ),
+    delete=extend_schema(
+        request=StudentIDListSerializer,
+        responses={204: None},
+        description="Request body точно такое же как и для метода POST"
+    )
+)
 class FavoritesView(views.APIView):
     """View для добавления студента в избранное."""
-    # serializer_class = FavoriteSerializer
     permission_classes = (IsAuthenticated,)
 
     def post(self, request):
