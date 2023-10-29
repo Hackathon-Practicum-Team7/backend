@@ -42,7 +42,8 @@ class StudentListSerializer(StudentCardSerializer):
             "employment_types",
             "working_condition",
             "has_portfolio",
-            "skill_match"
+            "skill_match",
+            "is_favorited",
         )
 
     def get_skill_match(self, obj):
