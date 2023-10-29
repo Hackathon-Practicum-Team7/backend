@@ -29,7 +29,9 @@ class CustomUserManager(BaseUserManager):
         if extra_fields.get("is_staff") is not True:
             raise ValueError("Суперпользователь должен иметь is_staff=True.")
         if extra_fields.get("is_superuser") is not True:
-            raise ValueError("Суперпользователь должен иметь is_superuser=True.")
+            raise ValueError(
+                "Суперпользователь должен иметь is_superuser=True."
+            )
         return self.create_user(email, password, **extra_fields)
 
 
@@ -48,6 +50,9 @@ class Recruiter(AbstractBaseUser, PermissionsMixin):
     )
     avatar = models.ImageField(
         upload_to=recruiter_avatar_path, null=True, blank=True
+    )
+    company = models.CharField(
+        max_length=50, null=True, blank=True
     )
     is_staff = models.BooleanField(default=False)
     is_superuser = models.BooleanField(default=False)

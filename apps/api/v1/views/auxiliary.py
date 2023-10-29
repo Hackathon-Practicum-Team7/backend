@@ -64,7 +64,7 @@ class ExportExcelView(views.APIView):
     permission_classes = (IsAuthenticated,)
 
     def post(self, request, *args, **kwargs):
-        students = get_selected_students(request.data.get("students"))
+        students = get_selected_students(request.data.get("students_id"))
         dataframe = get_dataframe(students)
 
         filename = "candidates.xlsx"
