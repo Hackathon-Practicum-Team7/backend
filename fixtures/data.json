@@ -1,0 +1,2229 @@
+[
+{
+    "model": "about.directionofstudy",
+    "pk": 1,
+    "fields": {
+        "title": "Программирование"
+    }
+},
+{
+    "model": "about.directionofstudy",
+    "pk": 2,
+    "fields": {
+        "title": "Дизайнер"
+    }
+},
+{
+    "model": "about.directionofstudy",
+    "pk": 3,
+    "fields": {
+        "title": "Анализ данных"
+    }
+},
+{
+    "model": "about.directionofstudy",
+    "pk": 4,
+    "fields": {
+        "title": "Маркетинг"
+    }
+},
+{
+    "model": "about.directionofstudy",
+    "pk": 5,
+    "fields": {
+        "title": "Менеджмент"
+    }
+},
+{
+    "model": "about.profession",
+    "pk": 4,
+    "fields": {
+        "title": "Фулстек-разработчик",
+        "direction": 1
+    }
+},
+{
+    "model": "about.profession",
+    "pk": 5,
+    "fields": {
+        "title": "Phyton-разработчик",
+        "direction": 1
+    }
+},
+{
+    "model": "about.profession",
+    "pk": 6,
+    "fields": {
+        "title": "Инженер по тестированию",
+        "direction": 1
+    }
+},
+{
+    "model": "about.profession",
+    "pk": 7,
+    "fields": {
+        "title": "Разработчик C++",
+        "direction": 1
+    }
+},
+{
+    "model": "about.profession",
+    "pk": 8,
+    "fields": {
+        "title": "Разработчик 1C",
+        "direction": 1
+    }
+},
+{
+    "model": "about.profession",
+    "pk": 9,
+    "fields": {
+        "title": "Java-разработчик",
+        "direction": 1
+    }
+},
+{
+    "model": "about.profession",
+    "pk": 10,
+    "fields": {
+        "title": "Фронтенд-разработчик",
+        "direction": 1
+    }
+},
+{
+    "model": "about.profession",
+    "pk": 11,
+    "fields": {
+        "title": "Android-разработчик",
+        "direction": 1
+    }
+},
+{
+    "model": "about.profession",
+    "pk": 13,
+    "fields": {
+        "title": "iOS-разработчик",
+        "direction": 1
+    }
+},
+{
+    "model": "about.profession",
+    "pk": 14,
+    "fields": {
+        "title": "Верстальщик на HTML и CSS",
+        "direction": 1
+    }
+},
+{
+    "model": "about.profession",
+    "pk": 15,
+    "fields": {
+        "title": "Специалист по Data Science",
+        "direction": 3
+    }
+},
+{
+    "model": "about.profession",
+    "pk": 16,
+    "fields": {
+        "title": "Аналитик данных",
+        "direction": 3
+    }
+},
+{
+    "model": "about.profession",
+    "pk": 17,
+    "fields": {
+        "title": "Системный аналитик",
+        "direction": 3
+    }
+},
+{
+    "model": "about.profession",
+    "pk": 18,
+    "fields": {
+        "title": "Бизнес-аналитик",
+        "direction": 3
+    }
+},
+{
+    "model": "about.profession",
+    "pk": 19,
+    "fields": {
+        "title": "1С-аналитик",
+        "direction": 3
+    }
+},
+{
+    "model": "about.profession",
+    "pk": 20,
+    "fields": {
+        "title": "Инженер данных",
+        "direction": 3
+    }
+},
+{
+    "model": "about.profession",
+    "pk": 21,
+    "fields": {
+        "title": "Продуктовый аналитик",
+        "direction": 3
+    }
+},
+{
+    "model": "about.profession",
+    "pk": 22,
+    "fields": {
+        "title": "Финансовый аналитик",
+        "direction": 3
+    }
+},
+{
+    "model": "about.profession",
+    "pk": 23,
+    "fields": {
+        "title": "Дизайнер интерфейсов",
+        "direction": 2
+    }
+},
+{
+    "model": "about.profession",
+    "pk": 24,
+    "fields": {
+        "title": "Графический дизайнер",
+        "direction": 2
+    }
+},
+{
+    "model": "about.profession",
+    "pk": 25,
+    "fields": {
+        "title": "Веб-дизайнер",
+        "direction": 2
+    }
+},
+{
+    "model": "about.profession",
+    "pk": 26,
+    "fields": {
+        "title": "Дизайн мобильных и кросс-платформенных приложений",
+        "direction": 2
+    }
+},
+{
+    "model": "about.profession",
+    "pk": 27,
+    "fields": {
+        "title": "Моушн-дизайнер",
+        "direction": 2
+    }
+},
+{
+    "model": "about.profession",
+    "pk": 28,
+    "fields": {
+        "title": "Продуктовый дизайнер",
+        "direction": 2
+    }
+},
+{
+    "model": "about.profession",
+    "pk": 29,
+    "fields": {
+        "title": "Коммерческий иллюстратор",
+        "direction": 2
+    }
+},
+{
+    "model": "about.profession",
+    "pk": 30,
+    "fields": {
+        "title": "Коммерческий иллюстратор",
+        "direction": 2
+    }
+},
+{
+    "model": "about.profession",
+    "pk": 31,
+    "fields": {
+        "title": "Дизайн презентаций",
+        "direction": 2
+    }
+},
+{
+    "model": "about.profession",
+    "pk": 32,
+    "fields": {
+        "title": "Интернет-маркетолог",
+        "direction": 4
+    }
+},
+{
+    "model": "about.profession",
+    "pk": 33,
+    "fields": {
+        "title": "Трафик-менеджер",
+        "direction": 4
+    }
+},
+{
+    "model": "about.profession",
+    "pk": 34,
+    "fields": {
+        "title": "Менеджер маркетплейсов",
+        "direction": 4
+    }
+},
+{
+    "model": "about.profession",
+    "pk": 35,
+    "fields": {
+        "title": "Бренд-менеджер",
+        "direction": 4
+    }
+},
+{
+    "model": "about.profession",
+    "pk": 36,
+    "fields": {
+        "title": "SMM- и контент-маркетолог",
+        "direction": 4
+    }
+},
+{
+    "model": "about.profession",
+    "pk": 37,
+    "fields": {
+        "title": "Менеджер проектов",
+        "direction": 5
+    }
+},
+{
+    "model": "about.profession",
+    "pk": 38,
+    "fields": {
+        "title": "IT-рекрутер",
+        "direction": 5
+    }
+},
+{
+    "model": "about.profession",
+    "pk": 39,
+    "fields": {
+        "title": "Финансовый менеджмент",
+        "direction": 5
+    }
+},
+{
+    "model": "about.profession",
+    "pk": 40,
+    "fields": {
+        "title": "Продакт-менеджер",
+        "direction": 5
+    }
+},
+{
+    "model": "about.profession",
+    "pk": 41,
+    "fields": {
+        "title": "HR-менеджер",
+        "direction": 5
+    }
+},
+{
+    "model": "about.grade",
+    "pk": 1,
+    "fields": {
+        "title": "Junior"
+    }
+},
+{
+    "model": "about.grade",
+    "pk": 2,
+    "fields": {
+        "title": "Middle"
+    }
+},
+{
+    "model": "about.grade",
+    "pk": 3,
+    "fields": {
+        "title": "Senior"
+    }
+},
+{
+    "model": "about.grade",
+    "pk": 4,
+    "fields": {
+        "title": "Lead"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 6,
+    "fields": {
+        "title": "A/B-тесты"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 7,
+    "fields": {
+        "title": "Adobe Photoshop"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 8,
+    "fields": {
+        "title": "Agile"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 9,
+    "fields": {
+        "title": "Android Studio"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 10,
+    "fields": {
+        "title": "ANTLR"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 11,
+    "fields": {
+        "title": "C++17"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 12,
+    "fields": {
+        "title": "Catboost"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 13,
+    "fields": {
+        "title": "Celery"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 14,
+    "fields": {
+        "title": "Charles"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 15,
+    "fields": {
+        "title": "Cmake"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 16,
+    "fields": {
+        "title": "CSS"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 17,
+    "fields": {
+        "title": "Devtools"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 18,
+    "fields": {
+        "title": "Django Rest Framework"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 19,
+    "fields": {
+        "title": "Django"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 20,
+    "fields": {
+        "title": "Docker"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 21,
+    "fields": {
+        "title": "Email-маркетинг"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 22,
+    "fields": {
+        "title": "Figma"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 23,
+    "fields": {
+        "title": "Flask"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 24,
+    "fields": {
+        "title": "Git"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 25,
+    "fields": {
+        "title": "HTML"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 26,
+    "fields": {
+        "title": "Adobe illustrator"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 27,
+    "fields": {
+        "title": "JavaScript"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 28,
+    "fields": {
+        "title": "TypeScript"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 29,
+    "fields": {
+        "title": "Jupyter Notebook"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 30,
+    "fields": {
+        "title": "Kafka"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 31,
+    "fields": {
+        "title": "Keras"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 32,
+    "fields": {
+        "title": "Mobile"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 33,
+    "fields": {
+        "title": "MySQL"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 34,
+    "fields": {
+        "title": "Node.js"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 35,
+    "fields": {
+        "title": "Performance маркетинг"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 36,
+    "fields": {
+        "title": "PostgreSQL"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 37,
+    "fields": {
+        "title": "Postman"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 38,
+    "fields": {
+        "title": "Protobuf"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 39,
+    "fields": {
+        "title": "PySpark"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 40,
+    "fields": {
+        "title": "Python"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 41,
+    "fields": {
+        "title": "Pytorch"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 42,
+    "fields": {
+        "title": "QA"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 43,
+    "fields": {
+        "title": "Rabbit MQ"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 44,
+    "fields": {
+        "title": "React + Redux"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 45,
+    "fields": {
+        "title": "Redis"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 46,
+    "fields": {
+        "title": "Redux"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 47,
+    "fields": {
+        "title": "REST API"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 48,
+    "fields": {
+        "title": "Scikit-learn"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 49,
+    "fields": {
+        "title": "SCRUM"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 50,
+    "fields": {
+        "title": "Sendsay"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 51,
+    "fields": {
+        "title": "SQL"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 52,
+    "fields": {
+        "title": "STL"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 53,
+    "fields": {
+        "title": "Tableau"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 54,
+    "fields": {
+        "title": "TypeScript"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 55,
+    "fields": {
+        "title": "Unit-экономика"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 56,
+    "fields": {
+        "title": "User Flow"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 57,
+    "fields": {
+        "title": "UX - исследования"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 58,
+    "fields": {
+        "title": "Waterfall"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 59,
+    "fields": {
+        "title": "Web"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 60,
+    "fields": {
+        "title": "Варфрейм"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 61,
+    "fields": {
+        "title": "Гадлайны"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 62,
+    "fields": {
+        "title": "Маркетинговая аналитика"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 63,
+    "fields": {
+        "title": "Unit-тесты"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 64,
+    "fields": {
+        "title": "Продуктовая аналитика"
+    }
+},
+{
+    "model": "about.skill",
+    "pk": 65,
+    "fields": {
+        "title": "Типографика"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 5,
+    "fields": {
+        "title": "Москва"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 6,
+    "fields": {
+        "title": "Санкт-Петербург"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 7,
+    "fields": {
+        "title": "Новосибирск"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 8,
+    "fields": {
+        "title": "Екатеринбург"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 9,
+    "fields": {
+        "title": "Казань"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 10,
+    "fields": {
+        "title": "Нижний Новгород"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 11,
+    "fields": {
+        "title": "Красноярск"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 12,
+    "fields": {
+        "title": "Челябинск"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 13,
+    "fields": {
+        "title": "Самара"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 14,
+    "fields": {
+        "title": "Уфа"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 15,
+    "fields": {
+        "title": "Ростов-на-Дону"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 16,
+    "fields": {
+        "title": "Краснодар"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 17,
+    "fields": {
+        "title": "Омск"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 18,
+    "fields": {
+        "title": "Воронеж"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 19,
+    "fields": {
+        "title": "Пермь"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 20,
+    "fields": {
+        "title": "Волгоград"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 21,
+    "fields": {
+        "title": "Саратов"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 22,
+    "fields": {
+        "title": "Тюмень"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 23,
+    "fields": {
+        "title": "Тольятти"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 24,
+    "fields": {
+        "title": "Барнаул"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 25,
+    "fields": {
+        "title": "Махачкала"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 26,
+    "fields": {
+        "title": "Ижевск"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 27,
+    "fields": {
+        "title": "Хабаровск"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 28,
+    "fields": {
+        "title": "Ульяновск"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 29,
+    "fields": {
+        "title": "Иркутск"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 30,
+    "fields": {
+        "title": "Владивосток"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 31,
+    "fields": {
+        "title": "Ярославль"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 32,
+    "fields": {
+        "title": "Томск"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 33,
+    "fields": {
+        "title": "Ставрополь"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 34,
+    "fields": {
+        "title": "Кемерово"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 35,
+    "fields": {
+        "title": "Набережные Челны"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 36,
+    "fields": {
+        "title": "Оренбург"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 37,
+    "fields": {
+        "title": "Рязань"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 38,
+    "fields": {
+        "title": "Чебоксары"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 39,
+    "fields": {
+        "title": "Пенза"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 40,
+    "fields": {
+        "title": "Липецк"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 41,
+    "fields": {
+        "title": "Калининград"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 42,
+    "fields": {
+        "title": "Киров"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 43,
+    "fields": {
+        "title": "Астрахань"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 44,
+    "fields": {
+        "title": "Тула"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 45,
+    "fields": {
+        "title": "Сочи"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 46,
+    "fields": {
+        "title": "Курск"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 47,
+    "fields": {
+        "title": "Тверь"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 48,
+    "fields": {
+        "title": "Брянск"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 49,
+    "fields": {
+        "title": "Якутск"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 50,
+    "fields": {
+        "title": "Иваново"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 51,
+    "fields": {
+        "title": "Владимир"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 52,
+    "fields": {
+        "title": "Калуга"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 53,
+    "fields": {
+        "title": "Белгород"
+    }
+},
+{
+    "model": "about.city",
+    "pk": 54,
+    "fields": {
+        "title": "Вологда"
+    }
+},
+{
+    "model": "about.employmenttype",
+    "pk": 1,
+    "fields": {
+        "title": "Полная занятось"
+    }
+},
+{
+    "model": "about.employmenttype",
+    "pk": 2,
+    "fields": {
+        "title": "Частичная занятость"
+    }
+},
+{
+    "model": "about.employmenttype",
+    "pk": 3,
+    "fields": {
+        "title": "Проектная работа"
+    }
+},
+{
+    "model": "about.employmenttype",
+    "pk": 4,
+    "fields": {
+        "title": "Стажировка"
+    }
+},
+{
+    "model": "about.workingcondition",
+    "pk": 1,
+    "fields": {
+        "title": "Офис"
+    }
+},
+{
+    "model": "about.workingcondition",
+    "pk": 2,
+    "fields": {
+        "title": "Гибрид"
+    }
+},
+{
+    "model": "about.workingcondition",
+    "pk": 3,
+    "fields": {
+        "title": "Удаленка"
+    }
+},
+{
+    "model": "students.student",
+    "pk": "1d109864-d85e-43af-99d2-96087bf0d088",
+    "fields": {
+        "name": "Ярослав",
+        "surname": "Грунин",
+        "profession": 10,
+        "grade": 1,
+        "city": 5,
+        "started_working": "2023-01-01",
+        "about": "Хочу сменить профессию учиться и развиваться в вебе.\\r\\nУ меня еще нет коммерческого опыта, но во время учебы я выполнил три проекта.\\r\\nЯ научился верстать адаптивно, использовать препроцессор Less, оптимизировать графику, работать с макетами из Figma. Получил базовые знание JavaScript\\r\\nОчень хочу работать! и развиваться изучать новые технологии.\\r\\nПродолжаю изучать Java Script.",
+        "avatar": "",
+        "resume": "",
+        "is_looking_for_job": true,
+        "has_portfolio": false,
+        "employment_types": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "working_condition": [
+            1,
+            2,
+            3
+        ]
+    }
+},
+{
+    "model": "students.student",
+    "pk": "1e06cc3a-dbd4-4a70-aadb-4278b121488b",
+    "fields": {
+        "name": "Наталья",
+        "surname": "Селиверстова",
+        "profession": 10,
+        "grade": 1,
+        "city": 5,
+        "started_working": "2020-02-01",
+        "about": "Frontend-разработчик опытом коммерческой разработки сайтов и веб-приложений.\\r\\nОтлично знакома с концепциями JavaScript и TypeScript. Работала над проектами с использованием React, NextJS и связанных веб-технологий.",
+        "avatar": "",
+        "resume": "",
+        "is_looking_for_job": true,
+        "has_portfolio": false,
+        "employment_types": [
+            2,
+            3
+        ],
+        "working_condition": [
+            3
+        ]
+    }
+},
+{
+    "model": "students.student",
+    "pk": "2f892d36-dc88-4ac6-a62b-715869c505f6",
+    "fields": {
+        "name": "Олеся",
+        "surname": "Почкина",
+        "profession": 10,
+        "grade": 1,
+        "city": 10,
+        "started_working": "2020-01-01",
+        "about": "Выполняла фриланс-заказы по отрисовке элементов интерфейса, простой вёрстке на HTML/CSS.\\r\\nРазрабатывала шаблоны для лендингов.\\r\\nНастраивала сайты на CMS Wordpress.\\r\\nВ мои обязанности, помимо разработки веб-страниц, входили оформление wiki-страниц на стандартном wiki-движке и Atlassian Confluence, работа с тасками на Atlassian Jira и Redmine, оформление сообщений на форумах с помощью BB-кодов, дизайн рассылок для электронной почты",
+        "avatar": "",
+        "resume": "",
+        "is_looking_for_job": true,
+        "has_portfolio": false,
+        "employment_types": [
+            3,
+            4
+        ],
+        "working_condition": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "students.student",
+    "pk": "330e34e1-9841-44a1-b2cc-f423ea8d5a2f",
+    "fields": {
+        "name": "Алена",
+        "surname": "Артемова",
+        "profession": 37,
+        "grade": 2,
+        "city": 5,
+        "started_working": "2015-01-01",
+        "about": "— Управление проектами по методологиям Agile, Scrum, Kanban;\\r\\n— Сбор требований, анализ и подготовка документации (ТЗ, пользовательские кейсы);\\r\\n— Прототипирование пользовательских интерфейсов и взаимодействие с дизайнером;\\r\\n— Формирование Sprint, декомпозиция и распределение задач с командой;\\r\\n— Приоритезация спринтов/фичей;\\r\\n— Подготовка roadmap и milestone для проектов;\\r\\n— Обеспечение прозрачности разработки, ведение деловой переписки",
+        "avatar": "",
+        "resume": "",
+        "is_looking_for_job": true,
+        "has_portfolio": false,
+        "employment_types": [
+            2,
+            3
+        ],
+        "working_condition": [
+            3
+        ]
+    }
+},
+{
+    "model": "students.student",
+    "pk": "39946b7d-b0a0-4dc6-abd8-df1dc1c05896",
+    "fields": {
+        "name": "Кирилл",
+        "surname": "Анисимов",
+        "profession": 4,
+        "grade": 1,
+        "city": 5,
+        "started_working": "2023-02-02",
+        "about": "ПРОАКТИВНЫЙ — ВЫСОКООРГАНИЗОВАННЫЙ — ВНИМАТЕЛЬНЫЙ\\r\\nРазработчик до мозга костей. Люблю программировать и создавать. Имею опыт разработки Frontend, Backend. Стек: python, C#, javascript(также React), sql.\\r\\nЯвляюсь преподавателем программирования в одном из ведущих технологических колледжей Москвы.",
+        "avatar": "",
+        "resume": "",
+        "is_looking_for_job": true,
+        "has_portfolio": true,
+        "employment_types": [
+            2,
+            3
+        ],
+        "working_condition": [
+            3
+        ]
+    }
+},
+{
+    "model": "students.student",
+    "pk": "51a5c11a-c56f-47c3-8d60-732cf9ba4107",
+    "fields": {
+        "name": "Иван",
+        "surname": "Петров",
+        "profession": 5,
+        "grade": 1,
+        "city": 5,
+        "started_working": "2023-01-01",
+        "about": "Python-разработчик-новичок с опытом работы над пет-проектами, основанными на Django и DRF. Заинтересован в углубленном изучении бэкенд-разработки и готов к обучению и росту.",
+        "avatar": "",
+        "resume": "",
+        "is_looking_for_job": true,
+        "has_portfolio": false,
+        "employment_types": [
+            1,
+            2,
+            3
+        ],
+        "working_condition": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "students.student",
+    "pk": "9b1863e1-4084-4c00-985a-f9c9a004e018",
+    "fields": {
+        "name": "Андрей",
+        "surname": "Платонов",
+        "profession": 4,
+        "grade": 2,
+        "city": 6,
+        "started_working": "2019-02-01",
+        "about": "Люблю веб разработку и все, что с ней связанно.\\r\\nВ свободное время люблю программировать,\\r\\nзаниматься спортом и играть в видеоигры.",
+        "avatar": "",
+        "resume": "",
+        "is_looking_for_job": true,
+        "has_portfolio": true,
+        "employment_types": [
+            1,
+            2
+        ],
+        "working_condition": [
+            1,
+            2,
+            3
+        ]
+    }
+},
+{
+    "model": "students.student",
+    "pk": "9c67b32e-8ace-44f6-98f2-a0c18e5abf64",
+    "fields": {
+        "name": "Дмитрий",
+        "surname": "Сибилев",
+        "profession": 5,
+        "grade": 1,
+        "city": 5,
+        "started_working": "2022-01-01",
+        "about": "Опыт самостоятельного выбора стэка и создания проекта с нуля, разработки ui компонентов storybook, внедрение дизайн системы с дизайн токенами figma, интеграции с другими сервисами/платежными системами/метриками по типу yandex метрика, гугл, mindbox.",
+        "avatar": "",
+        "resume": "",
+        "is_looking_for_job": true,
+        "has_portfolio": false,
+        "employment_types": [
+            2,
+            3
+        ],
+        "working_condition": [
+            2,
+            3
+        ]
+    }
+},
+{
+    "model": "students.student",
+    "pk": "d965eaf8-cece-42fe-9fb8-c7b4aec27341",
+    "fields": {
+        "name": "Вадим",
+        "surname": "Суханов",
+        "profession": 10,
+        "grade": 1,
+        "city": 5,
+        "started_working": "2018-01-01",
+        "about": "React Разработчик\\r\\nХочу найти работу с дружелюбным и общительным коллективом, большой офис с множеством интересных ребят. Развиваться по работе и становиться лучше.\\r\\nСам увлекаюсь разработкой, игрой на гитаре, музыкой, психологией и ещё много чем.",
+        "avatar": "",
+        "resume": "",
+        "is_looking_for_job": true,
+        "has_portfolio": true,
+        "employment_types": [
+            1
+        ],
+        "working_condition": [
+            1
+        ]
+    }
+},
+{
+    "model": "students.student",
+    "pk": "e0a9a492-0b93-4802-be46-b86b1eed3d6e",
+    "fields": {
+        "name": "Анастасия",
+        "surname": "Сергеева",
+        "profession": 5,
+        "grade": 2,
+        "city": 5,
+        "started_working": "2018-01-01",
+        "about": "Python-разработчик опытом коммерческой разработки сайтов и веб-приложений.\\r\\nОтлично знакома с концепциями ООП. Работала над проектами с использованием Django, FastApi.",
+        "avatar": "student_e0a9a492-0b93-4802-be46-b86b1eed3d6e/avatars/Ellipse_42.png",
+        "resume": "student_e0a9a492-0b93-4802-be46-b86b1eed3d6e/resumes/Диплом.pdf",
+        "is_looking_for_job": true,
+        "has_portfolio": false,
+        "employment_types": [
+            1
+        ],
+        "working_condition": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 8,
+    "fields": {
+        "sudent": "330e34e1-9841-44a1-b2cc-f423ea8d5a2f",
+        "skill": 8,
+        "score": 3
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 9,
+    "fields": {
+        "sudent": "330e34e1-9841-44a1-b2cc-f423ea8d5a2f",
+        "skill": 32,
+        "score": 4
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 10,
+    "fields": {
+        "sudent": "330e34e1-9841-44a1-b2cc-f423ea8d5a2f",
+        "skill": 49,
+        "score": 4
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 11,
+    "fields": {
+        "sudent": "2f892d36-dc88-4ac6-a62b-715869c505f6",
+        "skill": 25,
+        "score": 2
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 12,
+    "fields": {
+        "sudent": "2f892d36-dc88-4ac6-a62b-715869c505f6",
+        "skill": 16,
+        "score": 2
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 13,
+    "fields": {
+        "sudent": "2f892d36-dc88-4ac6-a62b-715869c505f6",
+        "skill": 7,
+        "score": 3
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 14,
+    "fields": {
+        "sudent": "2f892d36-dc88-4ac6-a62b-715869c505f6",
+        "skill": 59,
+        "score": 2
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 15,
+    "fields": {
+        "sudent": "2f892d36-dc88-4ac6-a62b-715869c505f6",
+        "skill": 22,
+        "score": 1
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 16,
+    "fields": {
+        "sudent": "2f892d36-dc88-4ac6-a62b-715869c505f6",
+        "skill": 27,
+        "score": 1
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 17,
+    "fields": {
+        "sudent": "51a5c11a-c56f-47c3-8d60-732cf9ba4107",
+        "skill": 19,
+        "score": 2
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 18,
+    "fields": {
+        "sudent": "51a5c11a-c56f-47c3-8d60-732cf9ba4107",
+        "skill": 18,
+        "score": 2
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 19,
+    "fields": {
+        "sudent": "51a5c11a-c56f-47c3-8d60-732cf9ba4107",
+        "skill": 40,
+        "score": 2
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 20,
+    "fields": {
+        "sudent": "51a5c11a-c56f-47c3-8d60-732cf9ba4107",
+        "skill": 20,
+        "score": 1
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 21,
+    "fields": {
+        "sudent": "e0a9a492-0b93-4802-be46-b86b1eed3d6e",
+        "skill": 18,
+        "score": 3
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 22,
+    "fields": {
+        "sudent": "e0a9a492-0b93-4802-be46-b86b1eed3d6e",
+        "skill": 20,
+        "score": 3
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 23,
+    "fields": {
+        "sudent": "e0a9a492-0b93-4802-be46-b86b1eed3d6e",
+        "skill": 23,
+        "score": 3
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 24,
+    "fields": {
+        "sudent": "e0a9a492-0b93-4802-be46-b86b1eed3d6e",
+        "skill": 40,
+        "score": 3
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 25,
+    "fields": {
+        "sudent": "9c67b32e-8ace-44f6-98f2-a0c18e5abf64",
+        "skill": 18,
+        "score": 2
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 26,
+    "fields": {
+        "sudent": "9c67b32e-8ace-44f6-98f2-a0c18e5abf64",
+        "skill": 13,
+        "score": 2
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 27,
+    "fields": {
+        "sudent": "9c67b32e-8ace-44f6-98f2-a0c18e5abf64",
+        "skill": 33,
+        "score": 2
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 28,
+    "fields": {
+        "sudent": "9c67b32e-8ace-44f6-98f2-a0c18e5abf64",
+        "skill": 36,
+        "score": 3
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 29,
+    "fields": {
+        "sudent": "1e06cc3a-dbd4-4a70-aadb-4278b121488b",
+        "skill": 25,
+        "score": 2
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 30,
+    "fields": {
+        "sudent": "1e06cc3a-dbd4-4a70-aadb-4278b121488b",
+        "skill": 16,
+        "score": 2
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 31,
+    "fields": {
+        "sudent": "1e06cc3a-dbd4-4a70-aadb-4278b121488b",
+        "skill": 27,
+        "score": 2
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 32,
+    "fields": {
+        "sudent": "1e06cc3a-dbd4-4a70-aadb-4278b121488b",
+        "skill": 44,
+        "score": 2
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 33,
+    "fields": {
+        "sudent": "1e06cc3a-dbd4-4a70-aadb-4278b121488b",
+        "skill": 8,
+        "score": 1
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 34,
+    "fields": {
+        "sudent": "1d109864-d85e-43af-99d2-96087bf0d088",
+        "skill": 25,
+        "score": 2
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 35,
+    "fields": {
+        "sudent": "1d109864-d85e-43af-99d2-96087bf0d088",
+        "skill": 16,
+        "score": 1
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 36,
+    "fields": {
+        "sudent": "1d109864-d85e-43af-99d2-96087bf0d088",
+        "skill": 27,
+        "score": 2
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 37,
+    "fields": {
+        "sudent": "39946b7d-b0a0-4dc6-abd8-df1dc1c05896",
+        "skill": 25,
+        "score": 2
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 38,
+    "fields": {
+        "sudent": "39946b7d-b0a0-4dc6-abd8-df1dc1c05896",
+        "skill": 16,
+        "score": 2
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 39,
+    "fields": {
+        "sudent": "39946b7d-b0a0-4dc6-abd8-df1dc1c05896",
+        "skill": 28,
+        "score": 1
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 40,
+    "fields": {
+        "sudent": "d965eaf8-cece-42fe-9fb8-c7b4aec27341",
+        "skill": 16,
+        "score": 3
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 41,
+    "fields": {
+        "sudent": "d965eaf8-cece-42fe-9fb8-c7b4aec27341",
+        "skill": 24,
+        "score": 2
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 42,
+    "fields": {
+        "sudent": "d965eaf8-cece-42fe-9fb8-c7b4aec27341",
+        "skill": 25,
+        "score": 2
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 43,
+    "fields": {
+        "sudent": "d965eaf8-cece-42fe-9fb8-c7b4aec27341",
+        "skill": 27,
+        "score": 2
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 44,
+    "fields": {
+        "sudent": "d965eaf8-cece-42fe-9fb8-c7b4aec27341",
+        "skill": 54,
+        "score": 3
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 45,
+    "fields": {
+        "sudent": "9b1863e1-4084-4c00-985a-f9c9a004e018",
+        "skill": 16,
+        "score": 2
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 46,
+    "fields": {
+        "sudent": "9b1863e1-4084-4c00-985a-f9c9a004e018",
+        "skill": 20,
+        "score": 1
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 47,
+    "fields": {
+        "sudent": "9b1863e1-4084-4c00-985a-f9c9a004e018",
+        "skill": 24,
+        "score": 3
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 48,
+    "fields": {
+        "sudent": "9b1863e1-4084-4c00-985a-f9c9a004e018",
+        "skill": 25,
+        "score": 3
+    }
+},
+{
+    "model": "students.studentskill",
+    "pk": 49,
+    "fields": {
+        "sudent": "9b1863e1-4084-4c00-985a-f9c9a004e018",
+        "skill": 63,
+        "score": 2
+    }
+},
+{
+    "model": "students.education",
+    "pk": 4,
+    "fields": {
+        "student": "330e34e1-9841-44a1-b2cc-f423ea8d5a2f",
+        "institute": "Интенсив по старту и развитию бизнеса",
+        "speciality": "Бизнес Молодость, Анализ бизнеса, ниш. Умение создать продающий бренд",
+        "started_at": null,
+        "finished_at": "2013-01-01"
+    }
+},
+{
+    "model": "students.education",
+    "pk": 5,
+    "fields": {
+        "student": "330e34e1-9841-44a1-b2cc-f423ea8d5a2f",
+        "institute": "Создание сайтов на Word Press",
+        "speciality": "\\\"Веб-ракета\\\", Анализ бизнеса, прототипирование, создание сайтов",
+        "started_at": null,
+        "finished_at": "2016-01-01"
+    }
+},
+{
+    "model": "students.education",
+    "pk": 6,
+    "fields": {
+        "student": "2f892d36-dc88-4ac6-a62b-715869c505f6",
+        "institute": "Колледж программирования и кибербезопасности МИРЭА",
+        "speciality": "Комплексное обеспечение информационной безопасности",
+        "started_at": "2019-01-01",
+        "finished_at": "2023-01-01"
+    }
+},
+{
+    "model": "students.education",
+    "pk": 7,
+    "fields": {
+        "student": "2f892d36-dc88-4ac6-a62b-715869c505f6",
+        "institute": "Яндекс.Практикум",
+        "speciality": "Фронтенд-разработчик",
+        "started_at": null,
+        "finished_at": "2023-01-01"
+    }
+},
+{
+    "model": "students.education",
+    "pk": 8,
+    "fields": {
+        "student": "51a5c11a-c56f-47c3-8d60-732cf9ba4107",
+        "institute": "Яндекс.Практикум",
+        "speciality": "Python-разработчик",
+        "started_at": null,
+        "finished_at": "2023-10-01"
+    }
+},
+{
+    "model": "students.education",
+    "pk": 9,
+    "fields": {
+        "student": "e0a9a492-0b93-4802-be46-b86b1eed3d6e",
+        "institute": "Яндекс.Практикум",
+        "speciality": "Python-разработчик",
+        "started_at": null,
+        "finished_at": "2023-08-01"
+    }
+},
+{
+    "model": "students.education",
+    "pk": 10,
+    "fields": {
+        "student": "9c67b32e-8ace-44f6-98f2-a0c18e5abf64",
+        "institute": "Яндекс.Практикум",
+        "speciality": "Python-разработчик",
+        "started_at": null,
+        "finished_at": "2023-03-01"
+    }
+},
+{
+    "model": "students.education",
+    "pk": 11,
+    "fields": {
+        "student": "1e06cc3a-dbd4-4a70-aadb-4278b121488b",
+        "institute": "Яндекс.Практикум",
+        "speciality": "Фронтенд-разработчик",
+        "started_at": null,
+        "finished_at": "2023-01-01"
+    }
+},
+{
+    "model": "students.education",
+    "pk": 12,
+    "fields": {
+        "student": "1d109864-d85e-43af-99d2-96087bf0d088",
+        "institute": "Яндекс.Практикум",
+        "speciality": "Фронтенд-разработчик",
+        "started_at": null,
+        "finished_at": "2023-11-01"
+    }
+},
+{
+    "model": "students.education",
+    "pk": 13,
+    "fields": {
+        "student": "39946b7d-b0a0-4dc6-abd8-df1dc1c05896",
+        "institute": "Яндекс.Практикум",
+        "speciality": "улстек-разработчик",
+        "started_at": null,
+        "finished_at": "2023-02-01"
+    }
+},
+{
+    "model": "students.education",
+    "pk": 14,
+    "fields": {
+        "student": "d965eaf8-cece-42fe-9fb8-c7b4aec27341",
+        "institute": "Яндекс.Практикум",
+        "speciality": "Фронтенд-разработчик",
+        "started_at": null,
+        "finished_at": "2022-01-01"
+    }
+},
+{
+    "model": "students.education",
+    "pk": 15,
+    "fields": {
+        "student": "9b1863e1-4084-4c00-985a-f9c9a004e018",
+        "institute": "Яндекс.Практикум",
+        "speciality": "Фронтенд-разработчик",
+        "started_at": null,
+        "finished_at": "2020-02-01"
+    }
+},
+{
+    "model": "students.job",
+    "pk": 4,
+    "fields": {
+        "student": "330e34e1-9841-44a1-b2cc-f423ea8d5a2f",
+        "organisation": "Genesix",
+        "position": "Менеджер проектов",
+        "started_at": "2017-01-01",
+        "finished_at": "2020-01-01",
+        "about": "— Управление проектами по методологиям Agile, Scrum, Kanban;\\r\\n— Сбор требований, анализ и подготовка документации (ТЗ, пользовательские кейсы);\\r\\n— Прототипирование пользовательских интерфейсов и взаимодействие с дизайнером;\\r\\n— Формирование Sprint, декомпозиция и распределение задач с командой;\\r\\n— Приоритезация спринтов/фичей;\\r\\n— Подготовка roadmap и milestone для проектов;\\r\\n— Обеспечение прозрачности разработки, ведение деловой переписки"
+    }
+},
+{
+    "model": "students.job",
+    "pk": 5,
+    "fields": {
+        "student": "330e34e1-9841-44a1-b2cc-f423ea8d5a2f",
+        "organisation": "MEDIAPARK",
+        "position": "Менеджер IT-проектов",
+        "started_at": "2020-01-01",
+        "finished_at": null,
+        "about": "- Управление web разработкой\\r\\n- Координация работы проектной команды\\r\\n- Контроль средств выделенных на проект\\r\\n- Контроль соблюдения сроков\\r\\n- Ведение документации, отчетности в Confluence\\r\\n- Ведение проектов в Jira с использованием kanban досок и scram спринтов\\r\\n- Развитие с нуля отдела тендеров"
+    }
+},
+{
+    "model": "students.job",
+    "pk": 6,
+    "fields": {
+        "student": "2f892d36-dc88-4ac6-a62b-715869c505f6",
+        "organisation": "Фриланс",
+        "position": "Web-дизайнер",
+        "started_at": "2017-01-01",
+        "finished_at": null,
+        "about": "Выполняла фриланс-заказы по отрисовке элементов интерфейса, простой вёрстке на HTML/CSS.\\r\\nРазрабатывала шаблоны для лендингов.\\r\\nНастраивала сайты на CMS Wordpress.\\r\\nВ мои обязанности, помимо разработки веб-страниц, входили оформление wiki-страниц на стандартном wiki-движке и Atlassian Confluence, работа с тасками на Atlassian Jira и Redmine, оформление сообщений на форумах с помощью BB-кодов, дизайн рассылок для электронной почты."
+    }
+},
+{
+    "model": "students.job",
+    "pk": 7,
+    "fields": {
+        "student": "51a5c11a-c56f-47c3-8d60-732cf9ba4107",
+        "organisation": "Проектная деятельность",
+        "position": "Python-разработчик",
+        "started_at": "2023-01-01",
+        "finished_at": null,
+        "about": "Занимался разработкой проектов"
+    }
+},
+{
+    "model": "students.job",
+    "pk": 8,
+    "fields": {
+        "student": "e0a9a492-0b93-4802-be46-b86b1eed3d6e",
+        "organisation": "МТС Банк",
+        "position": "Python-developer",
+        "started_at": "2020-02-01",
+        "finished_at": null,
+        "about": "Разрабатывала торговых ботов.\r\nРаботала с API различных криптовалютных бирж\r\nРаботала над оптимизацией скорости обработки данных и выставления ордеров на биржах\r\nПрименяла методы машенного обучения там, где это потребуется"
+    }
+},
+{
+    "model": "students.job",
+    "pk": 9,
+    "fields": {
+        "student": "9c67b32e-8ace-44f6-98f2-a0c18e5abf64",
+        "organisation": "United Traders",
+        "position": "Python--разработчик",
+        "started_at": "2023-06-01",
+        "finished_at": null,
+        "about": "Разрабатывал торговых ботов.\r\nРаботал с API различных криптовалютных бирж\r\nРаботал над оптимизацией скорости обработки данных и выставления ордеров на биржах"
+    }
+},
+{
+    "model": "students.job",
+    "pk": 10,
+    "fields": {
+        "student": "1e06cc3a-dbd4-4a70-aadb-4278b121488b",
+        "organisation": "Ant Media Studio",
+        "position": "Junior Frontend Developer",
+        "started_at": "2022-01-01",
+        "finished_at": "2023-08-09",
+        "about": "- Верстка адаптивных и кроссбраузерных сайтов на HTML/SCSS/JS/Jquery/Gulp/Webpack;\\r\\n- Создание SPA на ReactJS/Redux;\\r\\n- Поддержка и обновление существующих проектов;\\r\\n- Участие в разработке сервиса заказа, оформления и доставки для крупной компании;\\r\\n- Верстка страниц и компонентов различного уровня сложности."
+    }
+},
+{
+    "model": "students.job",
+    "pk": 11,
+    "fields": {
+        "student": "1d109864-d85e-43af-99d2-96087bf0d088",
+        "organisation": "ООО МАСТЕРДАТА",
+        "position": "Junior Frontend Developer",
+        "started_at": "2023-08-01",
+        "finished_at": null,
+        "about": "Верстка сайтов"
+    }
+},
+{
+    "model": "students.job",
+    "pk": 12,
+    "fields": {
+        "student": "39946b7d-b0a0-4dc6-abd8-df1dc1c05896",
+        "organisation": "Департамент городского имущества города Москвы",
+        "position": "Главный специалист",
+        "started_at": "2016-01-01",
+        "finished_at": "2020-05-05",
+        "about": "Работа с документацией\\r\\nПроверка технической документации\\r\\nСоставление планов, отчетов"
+    }
+},
+{
+    "model": "students.job",
+    "pk": 13,
+    "fields": {
+        "student": "d965eaf8-cece-42fe-9fb8-c7b4aec27341",
+        "organisation": "Like Центр",
+        "position": "Frontend Developer",
+        "started_at": "2022-02-01",
+        "finished_at": "2023-06-05",
+        "about": "Разработка с нуля международной CRM на стеке:\\r\\nVue 3, TypeScript, Vitest(jest), Vite.\\r\\nРазработка чата на Socket.io/Pusher, интеграция с whatsapp.\\r\\nНаписание юнит-тестов на бизнес-логику приложения.\\r\\nВерстка лендинг-страниц на SCSS.\\r\\nНаставничество, проектирование и поддержка существующих продуктов компании."
+    }
+},
+{
+    "model": "students.job",
+    "pk": 14,
+    "fields": {
+        "student": "9b1863e1-4084-4c00-985a-f9c9a004e018",
+        "organisation": "Viella",
+        "position": "frontend developer",
+        "started_at": "2020-01-01",
+        "finished_at": null,
+        "about": "Разработка crm для салонов красоты и частных мастеров. создание react компонентов\\r\\nрефакторниг\\r\\nтестирование\\r\\nобсуждение и создание архитектуры приложений\\r\\nкод ревью"
+    }
+},
+{
+    "model": "students.contact",
+    "pk": 4,
+    "fields": {
+        "student": "330e34e1-9841-44a1-b2cc-f423ea8d5a2f",
+        "email": "exemple4@example.com",
+        "phone": "+7-999-000-00-04",
+        "telegram": "https://t.me/student",
+        "portfolio": null,
+        "whatsapp": null
+    }
+},
+{
+    "model": "students.contact",
+    "pk": 5,
+    "fields": {
+        "student": "2f892d36-dc88-4ac6-a62b-715869c505f6",
+        "email": "exemple18@example.com",
+        "phone": "+7-999-000-00-18",
+        "telegram": "https://t.me/student",
+        "portfolio": null,
+        "whatsapp": "+7-999-000-00-18"
+    }
+},
+{
+    "model": "students.contact",
+    "pk": 6,
+    "fields": {
+        "student": "51a5c11a-c56f-47c3-8d60-732cf9ba4107",
+        "email": "exemple21@example.com",
+        "phone": "+7-999-000-00-21",
+        "telegram": "https://t.me/student",
+        "portfolio": null,
+        "whatsapp": null
+    }
+},
+{
+    "model": "students.contact",
+    "pk": 7,
+    "fields": {
+        "student": "e0a9a492-0b93-4802-be46-b86b1eed3d6e",
+        "email": "exemple17@example.com",
+        "phone": "+7-999-000-00-17",
+        "telegram": "https://t.me/student",
+        "portfolio": null,
+        "whatsapp": null
+    }
+},
+{
+    "model": "students.contact",
+    "pk": 8,
+    "fields": {
+        "student": "9c67b32e-8ace-44f6-98f2-a0c18e5abf64",
+        "email": "exemple22@example.com",
+        "phone": "+7-999-000-00-22",
+        "telegram": "https://t.me/student",
+        "portfolio": "https://github.com/",
+        "whatsapp": null
+    }
+},
+{
+    "model": "students.contact",
+    "pk": 9,
+    "fields": {
+        "student": "1e06cc3a-dbd4-4a70-aadb-4278b121488b",
+        "email": "exemple10@example.com",
+        "phone": "+7-999-000-00-10",
+        "telegram": "https://t.me/student",
+        "portfolio": null,
+        "whatsapp": null
+    }
+},
+{
+    "model": "students.contact",
+    "pk": 10,
+    "fields": {
+        "student": "1d109864-d85e-43af-99d2-96087bf0d088",
+        "email": "exemple16@example.com",
+        "phone": "+7-999-000-00-16",
+        "telegram": "https://t.me/student",
+        "portfolio": "https://github.com",
+        "whatsapp": "+7-999-000-00-16"
+    }
+},
+{
+    "model": "students.contact",
+    "pk": 11,
+    "fields": {
+        "student": "39946b7d-b0a0-4dc6-abd8-df1dc1c05896",
+        "email": "exemple15@example.com",
+        "phone": "+7-999-000-00-15",
+        "telegram": "https://t.me/student",
+        "portfolio": "https://github.com/",
+        "whatsapp": null
+    }
+},
+{
+    "model": "students.contact",
+    "pk": 12,
+    "fields": {
+        "student": "d965eaf8-cece-42fe-9fb8-c7b4aec27341",
+        "email": "exemple13@example.com",
+        "phone": "+7-999-000-00-13",
+        "telegram": "https://t.me/student",
+        "portfolio": "https://github.com/",
+        "whatsapp": "+7-999-000-00-13"
+    }
+},
+{
+    "model": "students.contact",
+    "pk": 13,
+    "fields": {
+        "student": "9b1863e1-4084-4c00-985a-f9c9a004e018",
+        "email": "exemple11@example.com",
+        "phone": "+7-999-000-00-11",
+        "telegram": "https://t.me/student",
+        "portfolio": "https://github.com/",
+        "whatsapp": "+7-999-000-00-11"
+    }
+},
+{
+    "model": "recruiters.recruiter",
+    "pk": "08a23919-d414-42c2-8bd5-89a88f4997e2",
+    "fields": {
+        "password": "pbkdf2_sha256$390000$cnBQ1qvGHkzv3z86zh0BZc$jYzMqwpZo3ihZMafd1FKT8mHeYqBjmKBerH4CaD2PHg=",
+        "last_login": null,
+        "email": "recruiter1@example.ru",
+        "name": "Анна",
+        "surname": "Иванова",
+        "avatar": "recruiter_08a23919-d414-42c2-8bd5-89a88f4997e2/Ellipse_18.png",
+        "company": "Big company",
+        "is_staff": false,
+        "is_superuser": false,
+        "is_active": true,
+        "groups": [],
+        "user_permissions": [],
+        "favorite_students": []
+    }
+},
+{
+    "model": "recruiters.recruiter",
+    "pk": "e567f673-612b-43f5-bc1c-d0ab9062ce34",
+    "fields": {
+        "password": "pbkdf2_sha256$390000$46dGHiZgdGg0C25JtGXGKC$q4zBSngYi7YVKgi+P6oSG3WzArU9AstIr/CLHGc4MLQ=",
+        "last_login": "2023-10-29T11:20:22.674Z",
+        "email": "admin@gmail.com",
+        "name": "Админ",
+        "surname": "Админов",
+        "avatar": "",
+        "company": null,
+        "is_staff": true,
+        "is_superuser": true,
+        "is_active": true,
+        "groups": [],
+        "user_permissions": [],
+        "favorite_students": []
+    }
+}
+]
