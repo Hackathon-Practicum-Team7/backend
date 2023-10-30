@@ -42,12 +42,12 @@ DB_PORT=5432
 4. Запуск контейнеров:
 ```
 docker compose up -d --build
-docker compose exec -it backend python collectstatic --noinput
-docker compose exec -it backend python manage.py migrate
+docker compose exec -i backend python manage.py collectstatic --noinput
+docker compose exec -i backend python manage.py migrate
 ```
 5. Загрузить фикстуры в бд
 ```
-docker compose exec -it backend python manage.py loaddata fixtures/fixtures.json
+docker compose exec -it backend python manage.py loaddata fixtures/data.json
 ```
 6. Локально API документация доступна по адресу
 http://localhost:8000/api/schema/swagger/
@@ -74,7 +74,21 @@ content-type: application/json
 Authorization: JWT <access-token>
 ```
 
-### Команда backend
+### Команда разработки:
 
-- [Сергей Саморуков](https://github.com/bauman1922) (ТГ: https://t.me/bauman1922)
-- [Вера Фадеева](https://github.com/verafadeeva) (ТГ: https://t.me/fadeevavera)
+#### Менеджер проекта
+- Тишина Анна ([Телеграмм](https://t.me/anna_silence))
+
+#### Дизайнеры
+- Лось Елизавета ([Телеграмм](https://t.me/elzvtalo))
+- Волобуева Валерия ([Телеграмм](http://t.me/Valeriia_Volobueva))
+- Бороденкова Нина ([Телеграмм](https://t.me/borodchenkova))
+
+#### Frontend-разработчики
+- [Андреева Татьяна](https://github.com/snurnisyan) ([Телеграмм](https://t.me/snurnisyan))
+- [Русанова Дарья](https://github.com/dariarus) ([Телеграмм](https://t.me/dar_arus))
+- [Толлю Элана](https://github.com/elana-tollu) ([Телеграмм](https://t.me/Elana_Tollu)
+)
+#### Backend-разработчики
+- [Сергей Саморуков](https://github.com/bauman1922) ([Телеграмм](https://t.me/bauman1922))
+- [Вера Фадеева](https://github.com/verafadeeva) ([Телеграмм](https://t.me/fadeevavera))
