@@ -16,6 +16,7 @@ https://seventeam-hakaton.sytes.net/
 - Gunicorn 21.2
 - Nginx
 - Docker
+- Pytest
 
 ### API-документация:
 https://seventeam-hakaton.sytes.net/api/schema/swagger/
@@ -50,11 +51,11 @@ docker compose exec -i backend python manage.py migrate
 docker compose exec -it backend python manage.py loaddata fixtures/data.json
 ```
 6. Локально API документация доступна по адресу
-http://localhost:8000/api/schema/swagger/
+http://127.0.0.1:8000/api/schema/swagger/
 
 7. Для работы с API проекта, необходимо получить токен:
 ```
-POST http://localhost:8000/api/v1/auth/jwt/create/
+POST http://127.0.0.1:8000/api/v1/auth/jwt/create/
 content-type: application/json
 
 {

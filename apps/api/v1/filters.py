@@ -18,7 +18,6 @@ class StudentFilter(FilterSet):
         field_name="skills__title",
         to_field_name="title",
         queryset=Skill.objects.all(),
-        # conjoined=True - условие для AND фильтрации
     )
 
     city = filters.ModelMultipleChoiceFilter(

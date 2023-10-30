@@ -6,9 +6,7 @@ from apps.students.selectors import get_student
 
 
 class StudentCardView(generics.RetrieveAPIView):
-    """
-    View для отдачи карточки студента
-    """
+    """View для отдачи карточки студента"""
 
     serializer_class = StudentCardSerializer
     permission_classes = (IsAuthenticated,)

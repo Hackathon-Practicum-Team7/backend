@@ -84,6 +84,7 @@ def test_export_excel_view(client_client):
 def test_download_resume_view(client_client, student_with_resume):
     url = reverse("download_resume", args=[str(student_with_resume.id)])
     response = client_client.get(url)
+    message = f'attachment; filename="{student_with_resume.resume.name}"'
     assert response.status_code == HTTPStatus.OK
-    assert response['Content-Disposition'] == f'attachment; filename="{student_with_resume.resume.name}"'
+    assert response['Content-Disposition'] == message
     assert response['Content-Type'] == 'application/pdf'
