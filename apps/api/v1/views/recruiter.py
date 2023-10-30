@@ -4,7 +4,6 @@ from djoser.views import UserViewSet
 from drf_spectacular.utils import extend_schema, extend_schema_view
 from rest_framework.decorators import action
 
-
 User = get_user_model()
 
 
@@ -17,11 +16,12 @@ User = get_user_model()
     destroy=extend_schema(exclude=True),
     activation=extend_schema(exclude=True),
     resend_activation=extend_schema(exclude=True),
-    reset_email=extend_schema(exclude=True),
-    reset_email_confirm=extend_schema(exclude=True),
+    reset_username=extend_schema(exclude=True),
+    reset_username_confirm=extend_schema(exclude=True),
     reset_password=extend_schema(exclude=True),
-    set_email=extend_schema(exclude=True),
+    set_username=extend_schema(exclude=True),
     set_password=extend_schema(exclude=True),
+    reset_password_confirm=extend_schema(exclude=True),
 )
 class RecruiterViewSet(UserViewSet):
     permission_classes = settings.PERMISSIONS.user

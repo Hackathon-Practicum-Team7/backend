@@ -1,8 +1,11 @@
+from drf_spectacular.utils import (OpenApiExample, extend_schema_field,
+                                   extend_schema_serializer)
 from rest_framework import serializers
 
 from apps.students.models import Contact, Skill, Student
 from apps.students.selectors import (calculate_skill_match,
                                      get_skill_match_status)
+
 from .card import ContactSerializer, StudentCardSerializer
 
 
@@ -10,7 +13,7 @@ class ContactListSerializer(ContactSerializer):
     """Сериализатор для отображения контактов студента."""
     class Meta:
         model = Contact
-        fields = ("email", "telegram")
+        fields = ("email", "telegram", "phone")
 
 
 class SkillListSerializer(serializers.ModelSerializer):
@@ -41,9 +44,11 @@ class StudentListSerializer(StudentCardSerializer):
             "employment_types",
             "working_condition",
             "has_portfolio",
-            "skill_match"
+            "skill_match",
+            "is_favorited",
         )
 
+    @extend_schema_field(field=int)
     def get_skill_match(self, obj):
         student_skills = obj.skills.values_list("title", flat=True)
         filter_skills = self.context.get(
@@ -52,3 +57,25 @@ class StudentListSerializer(StudentCardSerializer):
             student_skills, filter_skills)
         skill_match_status = get_skill_match_status(skill_match_total)
         return skill_match_status
+
+
+class StudentIDSerializer(serializers.Serializer):
+    id = serializers.UUIDField(read_only=True)
+
+
+@extend_schema_serializer(
+    examples=[
+        OpenApiExample(
+            'Example 1',
+            value={
+                'students_id': [
+                    {"id": "3fa85f64-5717-4562-b3fc-2c963f66afa6"}
+                ]
+            },
+            request_only=True,
+        ),
+    ]
+)
+class StudentIDListSerializer(serializers.Serializer):
+    """Для корректного отображения в OpenApi добавление в избранное"""
+    students_id = StudentIDSerializer(many=True, read_only=True)

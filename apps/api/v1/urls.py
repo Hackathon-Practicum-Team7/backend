@@ -1,12 +1,8 @@
 from django.urls import include, path
 from rest_framework import routers
 
-from apps.api.v1.views.auxiliary import (
-    CityView,
-    SkillView,
-    ProfessionView,
-    ExportExcelView,
-)
+from apps.api.v1.views.auxiliary import (CityView, ExportExcelView,
+                                         ProfessionView, SkillView)
 from apps.api.v1.views.card import StudentCardView
 from apps.api.v1.views.favorite import FavoritesView
 from apps.api.v1.views.recruiter import RecruiterViewSet
