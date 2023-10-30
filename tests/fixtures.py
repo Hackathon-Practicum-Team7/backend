@@ -59,7 +59,9 @@ def grade(db):
 @pytest.fixture
 def profession(db):
     direction = DirectionOfStudy.objects.create(title="Designer")
-    return Profession.objects.create(title="Test Profession", direction=direction)
+    return Profession.objects.create(
+        title="Test Profession", direction=direction
+    )
 
 
 @pytest.fixture
@@ -73,7 +75,9 @@ def working_condition(db):
 
 
 @pytest.fixture
-def student(db, city, employment_type, grade, profession, skill, working_condition):
+def student(
+    db, city, employment_type, grade, profession, skill, working_condition
+):
     student = Student.objects.create(
         name="Oleg",
         surname="Lee",

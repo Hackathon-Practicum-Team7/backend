@@ -9,6 +9,7 @@ from apps.students.selectors import get_all_students
 
 class StudentListView(generics.ListAPIView):
     """View для получения списка студентов."""
+
     serializer_class = StudentListSerializer
     permission_classes = (IsAuthenticated,)
     filter_backends = (DjangoFilterBackend,)

@@ -67,6 +67,8 @@ class TestDirectionOfSudySerialiser:
         assert serialized_data["title"] == data["title"]
         professions = serialized_data["professions"]
         assert len(professions) == len(data["professions"])
-        for serialized_profession, original_profession in zip(professions, data["professions"]):
+        for serialized_profession, original_profession in zip(
+            professions, data["professions"]
+        ):
             assert serialized_profession["id"] == original_profession["id"]
-            assert serialized_profession["title"] == original_profession["title"]
+            assert serialized_profession["title"] == original_profession["title"]  # noqa E501

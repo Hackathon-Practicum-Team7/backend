@@ -5,8 +5,16 @@ User = get_user_model()
 
 
 class RecruiterSerializer(UserSerializer):
+    """Сериализатор для users/me"""
 
     class Meta:
         model = User
-        fields = ('id', 'email', 'name', 'surname', 'avatar',
-                  'company', 'favorite_students')
+        fields = (
+            'id',
+            'email',
+            'name',
+            'surname',
+            'avatar',
+            'company',
+            'favorite_students',
+        )

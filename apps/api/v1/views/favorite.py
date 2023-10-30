@@ -21,6 +21,7 @@ from apps.students.selectors import get_selected_students
 )
 class FavoritesView(views.APIView):
     """View для добавления студента в избранное."""
+
     permission_classes = (IsAuthenticated,)
 
     def post(self, request):

@@ -11,6 +11,7 @@ from .card import ContactSerializer, StudentCardSerializer
 
 class ContactListSerializer(ContactSerializer):
     """Сериализатор для отображения контактов студента."""
+
     class Meta:
         model = Contact
         fields = ("email", "telegram", "phone")
@@ -18,6 +19,7 @@ class ContactListSerializer(ContactSerializer):
 
 class SkillListSerializer(serializers.ModelSerializer):
     """Сериализатор для отображения навыков студента."""
+
     class Meta:
         model = Skill
         fields = ("title",)
@@ -25,6 +27,7 @@ class SkillListSerializer(serializers.ModelSerializer):
 
 class StudentListSerializer(StudentCardSerializer):
     """Сериализатор для отображения списка студентов."""
+
     contact = ContactListSerializer(read_only=True)
     skills = SkillListSerializer(many=True, read_only=True)
     skill_match = serializers.SerializerMethodField()
@@ -78,4 +81,5 @@ class StudentIDSerializer(serializers.Serializer):
 )
 class StudentIDListSerializer(serializers.Serializer):
     """Для корректного отображения в OpenApi добавление в избранное"""
+
     students_id = StudentIDSerializer(many=True, read_only=True)
