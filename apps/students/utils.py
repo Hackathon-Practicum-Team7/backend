@@ -1,5 +1,4 @@
 import pandas as pd
-
 from django.db.models import QuerySet
 
 

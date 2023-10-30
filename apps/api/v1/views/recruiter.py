@@ -4,7 +4,6 @@ from djoser.views import UserViewSet
 from drf_spectacular.utils import extend_schema, extend_schema_view
 from rest_framework.decorators import action
 
-
 User = get_user_model()
 
 

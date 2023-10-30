@@ -1,9 +1,11 @@
+from drf_spectacular.utils import (OpenApiExample, extend_schema_field,
+                                   extend_schema_serializer)
 from rest_framework import serializers
-from drf_spectacular.utils import extend_schema_serializer, OpenApiExample
 
 from apps.students.models import Contact, Skill, Student
 from apps.students.selectors import (calculate_skill_match,
                                      get_skill_match_status)
+
 from .card import ContactSerializer, StudentCardSerializer
 
 
@@ -46,6 +48,7 @@ class StudentListSerializer(StudentCardSerializer):
             "is_favorited",
         )
 
+    @extend_schema_field(field=int)
     def get_skill_match(self, obj):
         student_skills = obj.skills.values_list("title", flat=True)
         filter_skills = self.context.get(
