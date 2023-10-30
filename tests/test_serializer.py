@@ -1,6 +1,8 @@
 import pytest
 from rest_framework.reverse import reverse
-from apps.api.v1.serializers.auxiliary import InfoOutputSerializer, DirectionOfSudySerialiser
+
+from apps.api.v1.serializers.auxiliary import (DirectionOfSudySerialiser,
+                                               InfoOutputSerializer)
 
 
 class TestStudentCardSerializer:

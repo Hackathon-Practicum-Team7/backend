@@ -43,8 +43,8 @@ def get_selected_students(students_id: list[dict]) -> QuerySet[Student]:
 def calculate_skill_match(student_skills: List[str], filter_skills: List[str]) -> float:
     if not filter_skills:
         return 100
-    matching_skills = [skill for skill in filter_skills if skill in student_skills]
-    total = (len(matching_skills) / len(filter_skills)) * 100
+    skills = [skill for skill in student_skills if skill in filter_skills]
+    total = len(skills) / len(filter_skills) * 100
     return round(total, 2)
 
 

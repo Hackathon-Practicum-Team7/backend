@@ -8,6 +8,7 @@ from apps.about.selectors import (get_all_skills, get_cities,
                                   get_direction_of_study)
 from apps.api.v1.serializers.auxiliary import (DirectionOfSudySerialiser,
                                                InfoOutputSerializer)
+from apps.api.v1.serializers.students_list import StudentIDListSerializer
 from apps.students.selectors import get_selected_students
 from apps.students.utils import get_dataframe
 
@@ -55,14 +56,20 @@ class SkillView(generics.ListAPIView):
         return queryset
 
 
-@extend_schema_view(post=extend_schema(tags=["auxilary"]))
+@extend_schema_view(
+    post=extend_schema(
+        request=StudentIDListSerializer,
+        tags=["auxilary"],
+        description="Экспорт в excel"
+    ),
+)
 class ExportExcelView(views.APIView):
     """View для скачивание файла excel"""
 
     permission_classes = (IsAuthenticated,)
 
     def post(self, request, *args, **kwargs):
-        students = get_selected_students(request.data.get("students"))
+        students = get_selected_students(request.data.get("students_id"))
         dataframe = get_dataframe(students)
 
         filename = "candidates.xlsx"
